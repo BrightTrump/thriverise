@@ -8,9 +8,9 @@ import DangerFilled from "./danger-filled";
 import Neutral from "./neutral";
 import BlackFilled from "./black-filled";
 import BlackOutlined from "./black-outlined";
-import PrimaryFilledRounded from "./primary-filled-rounded";
+import PrimaryFilledRounded from "./cream-filled-rounded";
 import BabyBlueFilled from "./baby-blue-filled";
-import WhiteFilledRounded from "./white-filled-rounded";
+import WhiteFilledRounded from "./sky-blue-filled-rounded";
 import WhiteFilled from "./white-filled";
 
 export function Button(props: ButtonProps) {

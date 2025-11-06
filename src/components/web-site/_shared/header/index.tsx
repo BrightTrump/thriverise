@@ -21,7 +21,7 @@ export default function Header() {
 
         <div className="hidden lg:grid">
           <Link href="/" target="_blank" className="grid whitespace-nowrap">
-            <Button variant={ButtonVariants.PrimaryFilled}>
+            <Button variant={ButtonVariants.Cre}>
               Request a Demo
             </Button>
           </Link>
