@@ -14,7 +14,7 @@ export default function SkyBlueFilledRounded({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`grid grid-flow-col gap-2 rounded-4xl bg-white cursor-pointer items-center justify-center font-medium text-sm px-5 py-2 ${
+      className={`grid grid-flow-col gap-2 rounded-4xl bg-[#01AED9] border-[#183668] cursor-pointer items-center justify-center font-medium text-lg px-5 py-2 ${
         disabled && "opacity-60"
       } ${className}`}
     >

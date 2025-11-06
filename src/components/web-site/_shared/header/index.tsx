@@ -20,21 +20,21 @@ export default function Header() {
         <Navigation />
 
         <div className="hidden lg:grid grid-cols-2 gap-3">
-          <Link href={"/login"} className="grid">
+          <Link href={"/join-us"} className="grid">
             <Button
               className="whitespace-nowrap border border-[#141414] rounded-xl"
-              variant={ButtonVariants.BlackOutlinedRounded}
+              variant={ButtonVariants.CreamFilledRounded}
             >
-              Sign in
+              Join Us
             </Button>
           </Link>
           <Link
-            href={"/"}
+            href={"/donate"}
             target="_blank"
             className="grid whitespace-nowrap"
           >
-            <Button variant={ButtonVariants.BlackFilledRounded}>
-              See Entobo
+            <Button variant={ButtonVariants.SkyBlueFilledRounded}>
+              Donate Now
             </Button>
           </Link>
         </div>

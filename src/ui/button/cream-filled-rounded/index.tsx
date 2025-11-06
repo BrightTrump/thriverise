@@ -14,7 +14,7 @@ export default function CreamFilledRounded({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`grid grid-flow-col gap-2 bg-[#FFF8EB] cursor-pointer border border-[#183668] text-[#183668] rounded-xl items-center justify-center font-semibold text-sm px-5 py-2 ${
+      className={`grid grid-flow-col gap-2 bg-[#FFF8EB] cursor-pointer border border-[#183668] text-[#183668] rounded-4xl items-center justify-center font-semibold text-lg px-5 py-2 ${
         disabled && "opacity-60"
       } ${className}`}
     >
