@@ -19,13 +19,13 @@ export default function Header() {
         {/* Navigation  */}
         <Navigation />
 
-        <div className="hidden lg:grid grid-cols-2 gap-3">
-          <Link href={"/join-us"} className="grid">
+        <div className="hidden lg:grid grid-cols-2 gap-2.5">
+          <Link href={"/join-us"}>
             <Button className="" variant={ButtonVariants.CreamFilledRounded}>
               Join Us
             </Button>
           </Link>
-          <Link href={"/donate"} target="_blank" className="">
+          <Link href={"/donate"} target="_blank">
             <Button variant={ButtonVariants.SkyBlueFilledRounded}>
               Donate Now
             </Button>
