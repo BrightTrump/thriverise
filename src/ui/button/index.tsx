@@ -3,7 +3,7 @@ import { ButtonProps, ButtonVariants } from "./types";
 import Default from "./default";
 import Neutral from "./neutral";
 import SkyBlueFilledRounded from "./sky-blue-filled-rounded";
-import CreamFilledRounded from "./cream-filled-rounded";
+import CreamFilledRounded from "./cream-filled-roundeds";
 
 export function Button(props: ButtonProps) {
   switch (props.variant) {
