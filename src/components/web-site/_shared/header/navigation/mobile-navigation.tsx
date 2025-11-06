@@ -91,7 +91,7 @@ export default function MobileNavigation() {
                       className="whitespace-nowrap border border-[#141414] rounded-xl"
                       variant={ButtonVariants.Neutral}
                     >
-                      Sign In
+                      Join Us
                     </Button>
                   </Link>
                   <Link
@@ -100,7 +100,7 @@ export default function MobileNavigation() {
                     className="grid whitespace-nowrap"
                   >
                     <Button variant={ButtonVariants.BabyBlueFilled}>
-                      See Entobo
+                      Donate Now
                     </Button>
                   </Link>
                 </div>
