@@ -86,20 +86,20 @@ export default function MobileNavigation() {
               {/* Call to actions */}
               <div className="px-5">
                 <div className="container mx-auto grid grid-cols-2 gap-3">
-                  <Link href={"/login"} className="grid">
+                  <Link href={"/join-us"} className="grid">
                     <Button
                       className="whitespace-nowrap border border-[#141414] rounded-xl"
-                      variant={ButtonVariants.Neutral}
+                      variant={ButtonVariants.CreamFilledRounded}
                     >
                       Join Us
                     </Button>
                   </Link>
                   <Link
-                    href={"/"}
+                    href={"/donate"}
                     target="_blank"
                     className="grid whitespace-nowrap"
                   >
-                    <Button variant={ButtonVariants.BabyBlueFilled}>
+                    <Button variant={ButtonVariants.SkyBlueFilledRounded}>
                       Donate Now
                     </Button>
                   </Link>

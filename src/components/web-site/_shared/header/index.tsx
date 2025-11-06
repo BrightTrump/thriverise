@@ -19,10 +19,22 @@ export default function Header() {
         {/* Navigation  */}
         <Navigation />
 
-        <div className="hidden lg:grid">
-          <Link href="/" target="_blank" className="grid whitespace-nowrap">
-            <Button variant={ButtonVariants.Cre}>
-              Request a Demo
+        <div className="hidden lg:grid grid-cols-2 gap-3">
+          <Link href={"/login"} className="grid">
+            <Button
+              className="whitespace-nowrap border border-[#141414] rounded-xl"
+              variant={ButtonVariants.BlackOutlinedRounded}
+            >
+              Sign in
+            </Button>
+          </Link>
+          <Link
+            href={"/"}
+            target="_blank"
+            className="grid whitespace-nowrap"
+          >
+            <Button variant={ButtonVariants.BlackFilledRounded}>
+              See Entobo
             </Button>
           </Link>
         </div>
