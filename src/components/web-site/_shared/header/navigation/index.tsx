@@ -11,7 +11,7 @@ export default function Navigation() {
     <>
       <MobileNavigation />
 
-      <div className="hidden lg:grid grid-flow-col gap-5 w-max items-center">
+      <div className="hidden lg:grid grid-flow-col gap-5 w-max items-center ">
         <NavigationItem url="/about-us">About Us</NavigationItem>
         <NavigationItem url="/our-work">Our Work</NavigationItem>
         <NavigationItem url="/resources">Resources</NavigationItem>

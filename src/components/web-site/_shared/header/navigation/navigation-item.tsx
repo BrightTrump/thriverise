@@ -27,7 +27,7 @@ export default function NavigationItem({
   return (
     <button
       onClick={handleOnClick}
-      className={`text-[#000000] text-left text-2xl lg:text-base font-medium grid grid-flow-col items-center gap-1 cursor-pointer ${className}`}
+      className={`text-[#183668] text-left text-2xl lg:text-lg font-medium grid grid-flow-col items-center gap-1 cursor-pointer ${className}`}
     >
       {children}
     </button>

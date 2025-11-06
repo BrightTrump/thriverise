@@ -62,32 +62,48 @@ export default function MobileNavigation() {
               {/* Navigations */}
               <div className="overflow-y-auto custom-scroll-bar px-5">
                 <div className="grid gap-8 container mx-auto">
-                  <MobileNavigationDropdown
-                    title="Features"
-                    navigations={SOLUTIONS_NAVIGATIONS}
-                    toggleMenu={handleToggle}
-                  />
-
-                  <NavigationItem url="/pricing" onClick={handleToggle}>
-                    Pricing
+                  <NavigationItem url="/about-us" onClick={handleToggle}>
+                    About Us
                   </NavigationItem>
-                  <NavigationItem url="/pricing" onClick={handleToggle}>
-                    Pricing
+                  <NavigationItem url="/our-work" onClick={handleToggle}>
+                    Our Work
+                  </NavigationItem>
+                  <NavigationItem url="/resources" onClick={handleToggle}>
+                    Resources
+                  </NavigationItem>
+                  <NavigationItem url="/media" onClick={handleToggle}>
+                    Media
+                  </NavigationItem>
+                  <NavigationItem url="/get-involved" onClick={handleToggle}>
+                    Get Involved
+                  </NavigationItem>
+                  <NavigationItem url="/contact" onClick={handleToggle}>
+                    Contact
                   </NavigationItem>
                 </div>
               </div>
 
               {/* Call to actions */}
               <div className="px-5">
-                <Link
-                  href=""
-                  target="_blank"
-                  className="grid whitespace-nowrap"
-                >
-                  <Button variant={ButtonVariants.PrimaryFilled}>
-                    Request a Demo
-                  </Button>
-                </Link>
+                <div className="container mx-auto grid grid-cols-2 gap-3">
+                  <Link href={"/login"} className="grid">
+                    <Button
+                      className="whitespace-nowrap border border-[#141414] rounded-xl"
+                      variant={ButtonVariants.Neutral}
+                    >
+                      Sign In
+                    </Button>
+                  </Link>
+                  <Link
+                    href={"/"}
+                    target="_blank"
+                    className="grid whitespace-nowrap"
+                  >
+                    <Button variant={ButtonVariants.BabyBlueFilled}>
+                      See Entobo
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </motion.div>
