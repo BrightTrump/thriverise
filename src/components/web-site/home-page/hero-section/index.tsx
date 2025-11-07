@@ -23,15 +23,17 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <div>
+        <span className="relative w-full aspect-[1/0.7]">
           <Image
             src={"/website-ui/hero-image.png"}
+            fill
+            // width={300}
+            // height={300}
+            // className="w-full"
+            sizes="1024px"
             alt="Hero Image"
-            width={300}
-            height={300}
-            className="w-full"
           />
-        </div>
+        </span>
       </div>
     </section>
   );

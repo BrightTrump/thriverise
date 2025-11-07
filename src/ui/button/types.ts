@@ -11,6 +11,6 @@ export interface ButtonProps {
 export enum ButtonVariants {
   CreamFilledRounded = "cream-filled-rounded",
   Default = "default",
-  Neutral = "neutral",
+  YellowFilledRounded = "sky-blue-filled-rounded",
   SkyBlueFilledRounded = "sky-blue-filled-rounded",
 }

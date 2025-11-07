@@ -13,18 +13,18 @@ export default function Section1() {
         </div>
 
         <div className="container mx-auto grid lg:grid-cols-2 gap-3 lg:gap-24 items-center">
-          <div>
+          <span className="relative w-full aspect-[1/0.7]">
             <Image
-              src={"/website-ui/hero-image.png"}
-              alt="Hero Image"
-              width={300}
-              height={300}
-              className="w-full"
+              src={"/website-ui/latest-projects.svg"}
+              fill
+              sizes="1024px"
+              alt="Icon"
             />
-          </div>
+          </span>
+
           <div className="grid gap-5 lg:gap-8 text-[#183668]">
             <div className="grid gap-2.5">
-              <h1 className="uppercase font-bold text-2xl md:text-5xl">
+              <h1 className="uppercase font-bold text-2xl md:text-4xl">
                 ThriveRise Community Learning Centers
               </h1>
               <p className="">
@@ -34,7 +34,7 @@ export default function Section1() {
               </p>
             </div>
             <div>
-              <Button variant={ButtonVariants.SkyBlueFilledRounded}>
+              <Button variant={ButtonVariants.YellowFilledRounded}>
                 Learn More
               </Button>
             </div>
