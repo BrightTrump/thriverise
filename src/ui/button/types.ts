@@ -9,16 +9,8 @@ export interface ButtonProps {
 }
 
 export enum ButtonVariants {
-  BabyBlueFilled = "baby-blue-filled",
-  BlackFilled = "black-filled",
-  BlackOutlined = "black-outlined",
-  DangerFilled = "danger-filled",
-  DangerOutlined = "danger-outlined",
+  CreamFilledRounded = "cream-filled-rounded",
   Default = "default",
   Neutral = "neutral",
-  PrimaryFilled = "primary-filled",
-  PrimaryFilledRounded = "primary-filled-rounded",
-  PrimaryOutlined = "primary-outlined",
-  WhiteFilled = "white-filled",
-  WhiteFilledRounded = "white-filled-rounded",
+  SkyBlueFilledRounded = "sky-blue-filled-rounded",
 }

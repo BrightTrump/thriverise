@@ -9,18 +9,23 @@ export default function Header() {
   const pathName = usePathname();
 
   return (
-    <header className="container mx-auto py-5 px-5 z-20 sticky top-0 left-0 w-full">
-      <div className="grid grid-flow-col justify-between lg:grid-cols-[auto_auto] items-center gap-8 lg:gap-16">
+    <header className="layout-spacing py-5 z-20 sticky top-0 left-0 w-full bg-[#FFF8EB]">
+      <div className="container mx-auto grid grid-flow-col justify-between lg:grid-cols-[auto_auto_auto] items-center gap-8 lg:gap-16">
         {/* Logo */}
-        <Logo className="w-32" />
+        <Logo className="w-14 h-14 lg:w-20 lg:h-20" />
 
         {/* Navigation  */}
         <Navigation />
 
-        <div className="hidden lg:grid">
-          <Link href="/" target="_blank" className="grid whitespace-nowrap">
-            <Button variant={ButtonVariants.PrimaryFilled}>
-              Request a Demo
+        <div className="hidden lg:grid grid-flow-col gap-2.5">
+          <Link href={"/join-us"} className="lg:hidden xl:block">
+            <Button className="" variant={ButtonVariants.CreamFilledRounded}>
+              Join Us
+            </Button>
+          </Link>
+          <Link href={"/donate"} target="_blank">
+            <Button variant={ButtonVariants.SkyBlueFilledRounded}>
+              Donate Now
             </Button>
           </Link>
         </div>
