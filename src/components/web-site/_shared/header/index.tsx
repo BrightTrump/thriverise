@@ -20,7 +20,7 @@ export default function Header() {
         <Navigation />
 
         <div className="hidden lg:grid grid-flow-col gap-2.5">
-          <Link href={"/join-us"} className="">
+          <Link href={"/join-us"} className="lg:hidden xl:block">
             <Button className="" variant={ButtonVariants.CreamFilledRounded}>
               Join Us
             </Button>
