@@ -6,7 +6,7 @@ import Section3 from "@/components/web-site/home-page/section-3";
 
 export default function Page() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden grid gap-12">
       <HeroSection />
       <Section1 />
       <Section2 />

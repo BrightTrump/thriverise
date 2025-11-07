@@ -7,14 +7,11 @@ import CreamFilledRounded from "./cream-filled-rounded";
 
 export function Button(props: ButtonProps) {
   switch (props.variant) {
-    case ButtonVariants.SkyBlueFilledRounded:
-      return <SkyBlueFilledRounded {...props} />;
-
     case ButtonVariants.CreamFilledRounded:
       return <CreamFilledRounded {...props} />;
 
-    case ButtonVariants.Neutral:
-      return <Neutral {...props} />;
+    case ButtonVariants.SkyBlueFilledRounded:
+      return <SkyBlueFilledRounded {...props} />;
 
     default:
       return <Default {...props} />;
