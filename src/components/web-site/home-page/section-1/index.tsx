@@ -1,6 +1,7 @@
 import React from "react";
 import ThriveriseCommunity from "./thriverise-community";
 import ThriveriseLibrary from "./thriverise-library";
+import ThriveriseSkills from "./thriverise-skills";
 
 export default function Section1() {
   return (
@@ -15,7 +16,7 @@ export default function Section1() {
         <div className="grid gap-10">
           <ThriveriseCommunity />
           <ThriveriseLibrary />
-          <ThriveriseCommunity />
+          <ThriveriseSkills />
         </div>
       </div>
     </section>
