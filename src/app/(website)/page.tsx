@@ -8,7 +8,6 @@ export default function Page() {
   return (
     <main className="overflow-hidden">
       <HeroSection />
-      <Features />
       <Section1 />
       <Section2 />
       <Section3 />
