@@ -7,7 +7,13 @@ export default function HeroSection() {
       <div className="container mx-auto grid lg:grid-cols-2 gap-2.5 items-center">
         <div className="grid gap-2.5 text-[#183668]">
           <h1 className="uppercase font-bold text-6xl ">
-            <span className="">Improving</span> Lives, One <span>Impact</span>{" "}
+            <span className="px-2 bg-[url(/website-ui/hero-improving-bg.svg)] bg-no-repeat bg-cover">
+              Improving
+            </span>{" "}
+            Lives, One{" "}
+            <span className="bg-[url(/website-ui/hero-impact-bg.svg)] bg-no-repeat bg-cover">
+              Impact
+            </span>{" "}
             at a Time
           </h1>
           <p className="lg:max-w-sm">
@@ -17,12 +23,12 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <div className="w-full">
+        <div className="">
           <Image
             src={"/website-ui/hero-image.png"}
             alt="Hero Image"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             className="w-full"
           />
         </div>
