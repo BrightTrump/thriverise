@@ -19,7 +19,7 @@ export function Logo({ type, variant, className, width, height }: LogoProps) {
         ? ""
         : ""
       : variant === "colored"
-      ? "/website-ui/thriverise-logo-2.svg"
+      ? "/website-ui/thriverise-logo.svg"
       : variant === "white"
       ? "/website-ui/thriverise-logo.svg"
       : "/website-ui/thriverise-logo.svg";
@@ -33,7 +33,7 @@ export function Logo({ type, variant, className, width, height }: LogoProps) {
     >
       <Image
         src={logoSrc}
-        alt="Rakisi Logo"
+        alt="Thriverise Logo"
         fill
         className="object-contain"
         sizes="300px"

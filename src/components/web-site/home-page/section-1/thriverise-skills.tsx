@@ -25,8 +25,8 @@ export default function ThriveriseSkills() {
           </p>
         </div>
         <div>
-          <Button variant={ButtonVariants.YellowFilledRounded}>
-            Learn More
+          <Button variant={ButtonVariants.GreenFilledRounded}>
+            Partner With Us
           </Button>
         </div>
       </div>
