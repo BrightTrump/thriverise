@@ -8,7 +8,7 @@ import {
 export default function Section4() {
   return (
     <section className="py-10 sm:py-20 layout-spacing bg-white ">
-      <div className="container mx-auto max-w-screen-2xl  grid gap-24 items-center place-items-center">
+      <div className="container mx-auto max-w-screen-2xl grid gap-24 items-center place-items-center">
         <div className="max-w-2xl grid [&>h1]:text-2xl [&>h1]:text-center [&>h1]:sm:text-3xl [&>h1]:text-[#020912] font-bold">
           <h1>
             Why Rakisi Would Be The Best Decision Your Insurance Business Could
