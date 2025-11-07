@@ -6,7 +6,16 @@ export default function Section1() {
     <section className="py-10 sm:py-20 layout-spacing">
       <div className="container mx-auto grid gap-2.5 items-center">
         <div>Our Latest Projects</div>
-        <div className="container mx-auto grid lg:grid-cols-2 gap-2.5 items-center">
+        <div className="container mx-auto grid lg:grid-cols-2 gap-5 items-center">
+          <div className="relative w-full aspect-[4/3]">
+            <Image
+              src={"/website-ui/hero-image.png"}
+              alt="Hero Image"
+              fill
+              className=""
+              sizes="300px"
+            />
+          </div>
           <div className="grid gap-2.5 text-[#183668]">
             <h1 className="uppercase font-bold text-6xl ">
               <span className="">Improving</span> Lives, One <span>Impact</span>{" "}
@@ -17,16 +26,6 @@ export default function Section1() {
               across Africa with free education, skills, and lifelong
               opportunities.
             </p>
-          </div>
-
-          <div className="relative w-full aspect-[4/3]">
-            <Image
-              src={"/website-ui/hero-image.png"}
-              alt="Hero Image"
-              fill
-              className=""
-              sizes="300px"
-            />
           </div>
         </div>
       </div>
