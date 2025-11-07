@@ -23,7 +23,7 @@ export default function YellowFilledRounded({
         }
         ${className}`}
       style={{
-        boxShadow: "4px 4px 0 #183668", // <-- solid offset shadow
+        boxShadow: "4px 4px 0 #183668",
       }}
     >
       {isLoading ? (
