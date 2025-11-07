@@ -15,7 +15,7 @@ export default function CreamFilledRounded({
       onClick={onClick}
       disabled={disabled}
       className={`grid grid-flow-col gap-2 items-center justify-center 
-        font-bold text-lg rounded-4xl border border-[#183668] bg-[#FFF8EB] text-[#183668] p-5 transition-all duration-200
+        font-bold text-lg rounded-4xl border border-[#183668] bg-[#FFF8EB] text-[#183668] px-5 py-3 transition-all duration-200
         ${
           disabled
             ? "opacity-60 cursor-not-allowed"

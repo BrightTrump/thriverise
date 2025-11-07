@@ -1,9 +1,6 @@
 "use client";
-
 import React from "react";
 import NavigationItem from "./navigation-item";
-import NavigationDropdown from "./navigation-dropdown";
-import { SOLUTIONS_NAVIGATIONS } from "@/constants/home-page/navigation.constant";
 import MobileNavigation from "./mobile-navigation";
 
 export default function Navigation() {

@@ -3,8 +3,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import NavigationItem from "./navigation-item";
 import { AnimatePresence, motion, Variants } from "motion/react";
-import MobileNavigationDropdown from "./mobile-navigation-dropdown";
-import { SOLUTIONS_NAVIGATIONS } from "@/constants/home-page/navigation.constant";
 
 export default function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +49,7 @@ export default function MobileNavigation() {
               {/* Logo and Close button */}
               <div className="px-5">
                 <div className="container mx-auto grid grid-flow-col items-center justify-between">
-                  <Logo variant="black" className="w-32 mx-auto" />
+                  <Logo variant="black" className="w-32" />
 
                   <button onClick={handleToggle}>
                     <Icon type={Icons.Close} size={32} color="#141414" />
