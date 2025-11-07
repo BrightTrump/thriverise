@@ -7,7 +7,7 @@ export default function ThriveriseCommunity() {
     <div className="grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]">
       <span className="relative w-full aspect-[1/0.7] ">
         <Image
-          src={"/website-ui/latest-projects.svg"}
+          src={"/website-ui/thriverise-community.svg"}
           fill
           sizes="1024px"
           alt="Icon"
