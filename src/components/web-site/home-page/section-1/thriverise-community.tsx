@@ -19,7 +19,7 @@ export default function ThriveriseCommunity() {
           <h1 className="uppercase font-bold text-2xl md:text-4xl">
             ThriveRise Community Learning Centers
           </h1>
-          <p className="">
+          <p className="lg:max-w-sm 2xl:max-w-xl">
             We&apos;ve launched a grassroots education initiative providing free
             basic education to out-of-school children in underserved
             communities.
