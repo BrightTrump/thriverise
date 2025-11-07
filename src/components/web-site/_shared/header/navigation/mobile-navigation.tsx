@@ -49,7 +49,7 @@ export default function MobileNavigation() {
               {/* Logo and Close button */}
               <div className="px-5">
                 <div className="container mx-auto grid grid-flow-col items-center justify-between">
-                  <Logo variant="black" className="w-32" />
+                  <Logo variant="black" className="w-14 h-14" />
 
                   <button onClick={handleToggle}>
                     <Icon type={Icons.Close} size={32} color="#141414" />
