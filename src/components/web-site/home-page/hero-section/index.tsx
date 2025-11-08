@@ -1,9 +1,17 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing">
+    <motion.section
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 2, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="py-10 sm:py-20 layout-spacing"
+    >
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 lg:gap-0 items-center">
         <div className="grid gap-2.5 text-[#183668]">
           <h1 className="uppercase font-bold text-6xl leading-[74px] lg:leading-[84px]">
@@ -33,6 +41,6 @@ export default function HeroSection() {
           />
         </span>
       </div>
-    </section>
+    </motion.section>
   );
 }
