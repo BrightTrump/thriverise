@@ -4,6 +4,12 @@ import React from "react";
 export default function Section2() {
   const { count: studentsCount, countRef: refStudent } = useCounter(1000, 5000);
   const { count: hourCount, countRef: refHour } = useCounter(100, 5000);
+  const { count: countCenters, countRef: refCenters } = useCounter(1, 5000);
+  const { count: countAmbassadors, countRef: refAmbassadors } = useCounter(
+    15,
+    5000
+  );
+
   return (
     <section className="py-24 layout-spacing">
       <div className="container mx-auto grid gap-16.5 sm:gap-20 place-items-center text-[#183668]">
@@ -23,12 +29,12 @@ export default function Section2() {
             <span>{hourCount}+</span>
             <p>Volunteer Hours contributed by teachers & mentors</p>
           </div>
-          <div>
-            <span>1</span>
+          <div ref={refCenters}>
+            <span>{countCenters}</span>
             <p>Active Learning Center with more on the way</p>
           </div>
-          <div>
-            <span>15</span>
+          <div ref={refAmbassadors}>
+            <span>{countAmbassadors}</span>
             <p>University Ambassadors driving awareness nationwide</p>
           </div>
         </div>
