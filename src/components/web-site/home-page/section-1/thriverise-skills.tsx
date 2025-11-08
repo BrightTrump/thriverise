@@ -1,10 +1,18 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button, ButtonVariants } from "@/ui";
 
 export default function ThriveriseSkills() {
   return (
-    <div className="grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 2, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]"
+    >
       <span className="relative w-full aspect-[1/0.7] ">
         <Image
           src={"/website-ui/thriverise-skills.svg"}
@@ -30,6 +38,6 @@ export default function ThriveriseSkills() {
           </Button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

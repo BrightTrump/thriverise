@@ -1,10 +1,18 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button, ButtonVariants } from "@/ui";
 
 export default function ThriveriseLibrary() {
   return (
-    <div className="grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]">
+    <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 2, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]"
+    >
       <div className="grid gap-5 lg:gap-8 text-[#183668] order-2 lg:order-none pl-5">
         <div className="grid gap-2.5">
           <h1 className="uppercase font-bold text-2xl md:text-4xl">
@@ -29,6 +37,6 @@ export default function ThriveriseLibrary() {
           alt="Icon"
         />
       </span>
-    </div>
+    </motion.div>
   );
 }
