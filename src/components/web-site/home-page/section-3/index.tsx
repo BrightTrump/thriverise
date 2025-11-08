@@ -1,5 +1,6 @@
 "use client";
 import { useCounter } from "@/hooks/counter.hooks";
+import { Icon, Icons } from "@/ui";
 import React from "react";
 export default function Section3() {
   const { count: studentsCount, countRef: refStudent } = useCounter(1000, 5000);
@@ -20,22 +21,44 @@ export default function Section3() {
         </div>
 
         {/* Content */}
-        <div className="px-5 mx-auto grid sm:grid-cols-2 xl:grid-cols-4 gap-5 text-center xl:text-left [&>div]:grid [&>div]:gap-4 [&>div]:items-start [&>div]:justify-items-center [&>div]:place-items-center [&>div]:xl:justify-items-start [&_span]:text-3xl sm:[&_span]:text-5xl [&_span]:font-bold">
-          <div ref={refStudent}>
-            <span>{studentsCount}+</span>
-            <p>Students Reached through resource drives & events</p>
+        <div className="px-5 mx-auto grid md:grid-cols-3 gap-5 [&>div]:bg-white [&>div]:rounded-lg [&>div]:p-5 [&_span]:px-1 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:uppercase [&_div]:grid [&_div]:gap-2.5">
+          <div>
+            <span>
+              <Icon type={Icons.Quote} size={20} color="#183668" />
+            </span>
+            <div>
+              <p>
+                Before ThriveRise, I had no books for my final year project.
+                Their library saved me.
+              </p>
+              <h2>Chidinma, Final-Year Student, UNILORIN</h2>
+            </div>
           </div>
-          <div ref={refHour}>
-            <span>{hourCount}+</span>
-            <p>Volunteer Hours contributed by teachers & mentors</p>
+
+          <div>
+            <span>
+              <Icon type={Icons.Quote} size={20} color="#183668" />
+            </span>
+            <div>
+              <p>
+                Teaching at the Community Learning Center changed my life. I saw
+                what access really means.
+              </p>
+              <h2>Peace, Volunteer Teacher</h2>
+            </div>
           </div>
-          <div ref={refCenters}>
-            <span>{countCenters}</span>
-            <p>Active Learning Center with more on the way</p>
-          </div>
-          <div ref={refAmbassadors}>
-            <span>{countAmbassadors}</span>
-            <p>University Ambassadors driving awareness nationwide</p>
+
+          <div>
+            <span>
+              <Icon type={Icons.Quote} size={20} color="#183668" />
+            </span>
+            <div>
+              <p>
+                We started small, but ThriveRise is creating a big wave for
+                children like mine.
+              </p>
+              <h2>Local Parent, Tanke</h2>
+            </div>
           </div>
         </div>
       </div>

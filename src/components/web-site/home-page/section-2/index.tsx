@@ -20,7 +20,7 @@ export default function Section2() {
         </div>
 
         {/* Content */}
-        <div className="px-5 mx-auto grid sm:grid-cols-2 xl:grid-cols-4 gap-5 text-center xl:text-left [&>div]:grid [&>div]:gap-4 [&>div]:items-start [&>div]:justify-items-center [&>div]:place-items-center [&>div]:xl:justify-items-start [&_span]:text-3xl sm:[&_span]:text-5xl [&_span]:font-bold">
+        <div className="px-5 mx-auto grid sm:grid-cols-2 xl:grid-cols-4 gap-5 text-center xl:text-left [&>div]:grid [&>div]:gap-7 [&_span]:text-3xl sm:[&_span]:text-5xl [&_span]:font-bold">
           <div ref={refStudent}>
             <span>{studentsCount}+</span>
             <p>Students Reached through resource drives & events</p>
