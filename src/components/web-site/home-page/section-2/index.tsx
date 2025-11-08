@@ -1,5 +1,7 @@
+import { useCounter } from "@/hooks/counter.hooks";
 import React from "react";
 export default function Section2() {
+  const { count, countRef } = useCounter(1000, 5000);
   return (
     <section className="py-24 layout-spacing">
       <div className="container mx-auto grid gap-16.5 sm:gap-20 place-items-center text-[#183668]">
@@ -10,9 +12,12 @@ export default function Section2() {
         </div>
 
         {/* Content */}
-        <div className="px-5 mx-auto grid sm:grid-cols-2 xl:grid-cols-4 gap-5 text-center xl:text-left [&>div]:grid [&>div]:gap-4 [&>div]:items-start [&>div]:justify-items-center [&>div]:place-items-center [&>div]:xl:justify-items-start [&_span]:text-3xl sm:[&_span]:text-5xl [&_span]:font-bold">
+        <div
+          ref={countRef}
+          className="px-5 mx-auto grid sm:grid-cols-2 xl:grid-cols-4 gap-5 text-center xl:text-left [&>div]:grid [&>div]:gap-4 [&>div]:items-start [&>div]:justify-items-center [&>div]:place-items-center [&>div]:xl:justify-items-start [&_span]:text-3xl sm:[&_span]:text-5xl [&_span]:font-bold"
+        >
           <div>
-            <span>1000+</span>
+            <span>{count}+</span>
             <p>Students Reached through resource drives & events</p>
           </div>
           <div>
