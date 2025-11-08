@@ -11,7 +11,7 @@ export default function Section2() {
   );
 
   return (
-    <section className="py-24 layout-spacing">
+    <section className="py-10 sm:py-20 layout-spacing">
       <div className="container mx-auto grid gap-16.5 sm:gap-20 place-items-center text-[#183668]">
         <div className="max-w-xl grid">
           <h1 className="uppercase font-bold text-center text-3xl">

@@ -11,11 +11,11 @@ export default function Section3() {
   );
 
   return (
-    <section className="py-24 layout-spacing">
+    <section className="py-24 layout-spacing bg-[#02558B]">
       <div className="container mx-auto grid gap-16.5 sm:gap-20 place-items-center text-[#183668]">
         <div className="max-w-xl grid">
-          <h1 className="uppercase font-bold text-center text-3xl">
-            Our Impact So Far
+          <h1 className="uppercase font-bold text-center text-3xl text-white">
+            Impact Stories
           </h1>
         </div>
 
