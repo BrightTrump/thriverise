@@ -1,7 +1,7 @@
 import React from "react";
 import { IconProps } from "../types";
 
-export default function Agent({ color, size }: IconProps) {
+export default function Quote({ color, size }: IconProps) {
   return (
     <svg
       width={size}
