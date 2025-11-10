@@ -3,10 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button, ButtonVariants } from "@/ui";
 import Image from "next/image";
+import Link from "next/link";
 export default function Section4() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing bg-white">
-      <div className="container mx-auto grid gap-16.5 sm:gap-20 place-items-center text-[#183668]">
+    <section className="py-10 sm:py-20">
+      <div className="container mx-auto pl-5 md:pl-52">
         {/* Content */}
 
         <motion.div
@@ -14,7 +15,7 @@ export default function Section4() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
-          className="grid lg:grid-cols-2 gap-3 lg:gap-24 items-center bg-[#FDB813] text-[#183668]"
+          className="grid lg:grid-cols-2 gap-12 pl-5 py-24 items-center bg-[#FDB813] rounded-bl-[60px] md:rounded-bl-[100px] text-[#183668]"
         >
           <div className="grid gap-5 lg:gap-8 text-[#183668] order-2 lg:order-none pl-5">
             <div className="grid gap-2.5">
@@ -28,9 +29,16 @@ export default function Section4() {
               </p>
             </div>
             <div>
-              <Button variant={ButtonVariants.SkyBlueFilledRounded}>
-                Join as a Campus Ambassador
-              </Button>
+              <Link
+                href={
+                  "https://docs.google.com/forms/d/1J0RqmPMn4Tek6jYBNRxef5WP4gUqGDGZanzDppYqDJ4/viewform"
+                }
+                target="_blank"
+              >
+                <Button variant={ButtonVariants.SkyBlueFilledRounded}>
+                  Join as a Campus Ambassador
+                </Button>
+              </Link>
             </div>
           </div>
           <span className="relative w-full aspect-[1/0.7] mx-auto order-1 lg:order-none">

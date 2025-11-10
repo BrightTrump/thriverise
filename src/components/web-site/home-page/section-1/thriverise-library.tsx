@@ -30,7 +30,6 @@ export default function ThriveriseLibrary() {
               "https://docs.google.com/forms/d/1sW2dBYzZLoQ3YcFKpMlNHpdIkhPhRO1JSa0cBS7V8tc/viewform"
             }
             target="_blank"
-            className="lg:hidden xl:block"
           >
             <Button variant={ButtonVariants.SkyBlueFilledRounded}>
               Request Resources
