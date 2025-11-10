@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button, ButtonVariants } from "@/ui";
+import Link from "next/link";
 
 export default function ThriveriseLibrary() {
   return (
@@ -24,9 +25,17 @@ export default function ThriveriseLibrary() {
           </p>
         </div>
         <div>
-          <Button variant={ButtonVariants.SkyBlueFilledRounded}>
-            Request Resources
-          </Button>
+          <Link
+            href={
+              "https://docs.google.com/forms/d/1sW2dBYzZLoQ3YcFKpMlNHpdIkhPhRO1JSa0cBS7V8tc/viewform"
+            }
+            target="_blank"
+            className="lg:hidden xl:block"
+          >
+            <Button variant={ButtonVariants.SkyBlueFilledRounded}>
+              Request Resources
+            </Button>
+          </Link>
         </div>
       </div>
       <span className="relative w-full aspect-[1/0.7] mx-auto order-1 lg:order-none">

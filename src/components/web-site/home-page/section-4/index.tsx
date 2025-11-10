@@ -5,7 +5,7 @@ import { Button, ButtonVariants } from "@/ui";
 import Image from "next/image";
 export default function Section4() {
   return (
-    <section className="layout-spacing bg-white">
+    <section className="py-10 sm:py-20 layout-spacing bg-white">
       <div className="container mx-auto grid gap-16.5 sm:gap-20 place-items-center text-[#183668]">
         {/* Content */}
 

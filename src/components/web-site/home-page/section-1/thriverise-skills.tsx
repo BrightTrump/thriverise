@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button, ButtonVariants } from "@/ui";
+import Link from "next/link";
 
 export default function ThriveriseSkills() {
   return (
@@ -33,9 +34,17 @@ export default function ThriveriseSkills() {
           </p>
         </div>
         <div>
-          <Button variant={ButtonVariants.GreenFilledRounded}>
-            Partner With Us
-          </Button>
+          <Link
+            href={
+              "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
+            }
+            target="_blank"
+            className="lg:hidden xl:block"
+          >
+            <Button variant={ButtonVariants.GreenFilledRounded}>
+              Partner With Us
+            </Button>
+          </Link>
         </div>
       </div>
     </motion.div>
