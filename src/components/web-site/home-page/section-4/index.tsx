@@ -7,22 +7,21 @@ import Link from "next/link";
 export default function Section4() {
   return (
     <section className="py-10 sm:py-20">
-      <div className="container mx-auto pl-5 md:pl-52">
-        {/* Content */}
-
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid lg:grid-cols-2 gap-12 pl-5 py-24 items-center bg-[#FDB813] rounded-bl-[60px] md:rounded-bl-[100px] text-[#183668]"
-        >
+      {/* Content */}
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="container mx-auto pl-5 md:pl-52"
+      >
+        <div className="border border-amber-600 max-lg grid lg:grid-cols-2 gap-12 lg:gap-5 pl-5 py-24 items-center bg-[#FDB813] rounded-bl-[60px] md:rounded-bl-[100px] text-[#183668]">
           <div className="grid gap-5 lg:gap-8 text-[#183668] order-2 lg:order-none pl-5">
             <div className="grid gap-2.5">
               <h1 className="uppercase font-bold text-2xl md:text-4xl">
                 Become a Campus Ambassador
               </h1>
-              <p className="lg:max-w-sm 2xl:max-w-xl">
+              <p className="max-w-sm lg:max-w-md 2xl:max-w-xl">
                 Are you passionate about education and student access? Join the
                 ThriveRise Campus Ambassadors Program and become a voice for
                 change in your university.
@@ -49,8 +48,8 @@ export default function Section4() {
               alt="Icon"
             />
           </span>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </section>
   );
 }
