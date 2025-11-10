@@ -6,5 +6,9 @@ export interface IconProps {
 
 export enum Icons {
   Check = "check",
+  ChevronDown = "chevron-down",
+  ChevronLeft = "chevron-left",
+  ChevronRight = "chevron-right",
+  ChevronUp = "chevron-up",
   Quote = "quote",
 }
