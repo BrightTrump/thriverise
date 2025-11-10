@@ -9,7 +9,7 @@ export default function Header() {
   const pathName = usePathname();
 
   return (
-    <header className="layout-spacing py-5 z-20 sticky top-0 left-0 w-full bg-[#FFF8EB]">
+    <header className="layout-spacing py-20 z-20 sticky top-0 left-0 w-full bg-[#FFF8EB]">
       <div className="container mx-auto grid grid-flow-col justify-between lg:grid-cols-[auto_auto_auto] items-center gap-8 lg:gap-16">
         {/* Logo */}
         <Logo className="w-14 h-14 lg:w-20 lg:h-20" />
