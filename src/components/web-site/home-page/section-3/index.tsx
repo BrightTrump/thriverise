@@ -1,16 +1,7 @@
 "use client";
-import { useCounter } from "@/hooks/counter.hooks";
 import { Icon, Icons } from "@/ui";
 import React from "react";
 export default function Section3() {
-  const { count: studentsCount, countRef: refStudent } = useCounter(1000, 5000);
-  const { count: hourCount, countRef: refHour } = useCounter(100, 5000);
-  const { count: countCenters, countRef: refCenters } = useCounter(1, 5000);
-  const { count: countAmbassadors, countRef: refAmbassadors } = useCounter(
-    15,
-    5000
-  );
-
   return (
     <section className="py-24 layout-spacing bg-[#02558B]">
       <div className="container mx-auto grid gap-16.5 sm:gap-20 place-items-center text-[#183668]">
