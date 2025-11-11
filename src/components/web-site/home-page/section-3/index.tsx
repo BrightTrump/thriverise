@@ -12,7 +12,7 @@ export default function Section3() {
         </div>
 
         {/* Content */}
-        <div className="px-5 mx-auto grid md:grid-cols-3 gap-5 [&>div]:bg-white [&>div]:rounded-lg [&>div]:p-5 [&_span]:px-1 [&_span]:pt-4 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:uppercase [&_div]:grid [&_div]:gap-2.5 [&_p]:text-lg">
+        <div className="px-5 mx-auto grid lg:grid-cols-3 gap-5 [&>div]:bg-white [&>div]:rounded-lg [&>div]:p-5 [&_span]:px-1 [&_span]:pt-4 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:uppercase [&_div]:grid [&_div]:gap-2.5 [&_p]:text-lg">
           <div>
             <span className="pb-16">
               <Icon type={Icons.Quote} size={24} color="#183668" />

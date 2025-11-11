@@ -15,7 +15,7 @@ export default function Section4() {
         viewport={{ once: true, amount: 0.2 }}
         className="container mx-auto pl-5 md:pl-52"
       >
-        <div className="border border-amber-600 max-lg grid lg:grid-cols-2 gap-12 lg:gap-5 pl-5 py-24 items-center bg-[#FDB813] rounded-bl-[60px] md:rounded-bl-[100px] text-[#183668]">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 pl-5 py-8 lg:py-20 items-center bg-[#FDB813] rounded-bl-[60px] md:rounded-bl-[100px] text-[#183668]">
           <div className="grid gap-5 lg:gap-8 text-[#183668] order-2 lg:order-none pl-5">
             <div className="grid gap-2.5">
               <h1 className="uppercase font-bold text-2xl md:text-4xl">
@@ -40,14 +40,33 @@ export default function Section4() {
               </Link>
             </div>
           </div>
-          <span className="relative w-full aspect-[1/0.7] mx-auto order-1 lg:order-none">
+          {/* <span className="relative w-full aspect-[1/0.7] mx-auto order-1 lg:order-none">
             <Image
               src={"/website-ui/campus-ambassador.svg"}
               fill
               sizes="1024px"
               alt="Icon"
             />
-          </span>
+          </span> */}
+          <div className="relative w-full aspect-[1/0.8] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full mx-auto order-1 lg:order-none">
+            <Image
+              src="/website-ui/campus-ambassador.svg"
+              fill
+              alt="Campus Ambassador Illustration"
+              className="object-contain"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </div>
+          {/* <span>
+            <Image
+              src={"/website-ui/campus-ambassador.svg"}
+              width={500}
+              height={500}
+              className="w-full mx-auto order-1 lg:order-none"
+              alt="Hero Image"
+            />
+          </span> */}
         </div>
       </motion.div>
     </section>

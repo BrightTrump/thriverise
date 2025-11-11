@@ -20,7 +20,7 @@ export default function Header() {
         <div className="hidden lg:grid grid-flow-col gap-2.5">
           <Link
             href={
-              "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
+              "https://docs.google.com/forms/d/1pEjrGav1yRNVdfsIQvWyBx9JeeNtoqO_llAMyC34VaI/viewform"
             }
             target="_blank"
             className="lg:hidden xl:block"
