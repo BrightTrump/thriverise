@@ -10,5 +10,9 @@ export enum Icons {
   ChevronLeft = "chevron-left",
   ChevronRight = "chevron-right",
   ChevronUp = "chevron-up",
+  Facebook = "facebook",
+  Instagram = "instagram",
+  Linkedin = "linkedin",
   Quote = "quote",
+  Twitter = "twitter",
 }
