@@ -1,44 +1,22 @@
 import React from "react";
 import { Icon, Icons, Logo } from "@/ui";
-import Image from "next/image";
 import Link from "next/link";
-import Subscribe from "./subscribe";
 
 const SOCIALS_SCHEMA = [
-  { icon: Icons.Instagram, url: "https://www.instagram.com/entobohq/" },
-  { icon: Icons.Twitter, url: "https://x.com/EntoboHQ" },
-  { icon: Icons.Facebook, url: "https://www.facebook.com/entobohq/" },
-  { icon: Icons.Linkedin, url: "https://www.linkedin.com/company/entobohq" },
+  { icon: Icons.Instagram, url: "" },
+  { icon: Icons.Twitter, url: "" },
+  { icon: Icons.Facebook, url: "" },
+  { icon: Icons.Linkedin, url: "" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="overflow-hidden bg-[#141414] layout-spacing text-white">
+    <footer className="overflow-hidden layout-spacing text-[#183668]">
       <div className="container mx-auto relative grid gap-10 sm:gap-20 top-10 [@media(min-width:_480px)_and_(max-width:_768px)]:top-16 md:top-20 lg:top-32 xl:top-40">
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 lg:justify-between items-start gap-20">
+        <div className="grid lg:grid-cols-2 lg:justify-between items-start gap-20">
           <div className="grid gap-5 w-full">
             {/* Logo */}
             <Logo variant="white" className="w-36" />
-            <div className="flex gap-2 [&>span]:relative [&>span]:w-6 [&>span]:h-6">
-              <span>
-                <Image
-                  src={"/website-ui/footer-uk-icon.svg"}
-                  fill
-                  sizes="24px"
-                  priority
-                  alt="UK Icon"
-                />
-              </span>
-              <span>
-                <Image
-                  src={"/website-ui/footer-9ja-icon.svg"}
-                  fill
-                  sizes="24px"
-                  priority
-                  alt="9ja Icon"
-                />
-              </span>
-            </div>
 
             <div className="grid gap-1 max-w-xs">
               <h3 className="text-2xl">Have questions? We have answers.</h3>
@@ -65,6 +43,13 @@ export default function Footer() {
                 ))}
               </div>
             </div>
+
+            {/* Copy Right and Links */}
+            <div className="grid border-t border-[#808080] pt-5">
+              <p className="text-center opacity-70">
+                All rights reserved. © 2025 Entobo.
+              </p>
+            </div>
           </div>
 
           <nav className="w-max grid [&>div]:grid [&>div]:gap-5 [@media(max-width:_480px)]:grid-cols-[repeat(2,_auto)] grid-cols-[repeat(3,_auto)] gap-10 items-center">
@@ -84,26 +69,7 @@ export default function Footer() {
               <Link href={"/coming-soon"}>Blog</Link>
             </div>
           </nav>
-
-          <Subscribe />
         </div>
-
-        {/* Copy Right and Links */}
-        <div className="grid border-t border-[#808080] pt-5">
-          <p className="text-center opacity-70">
-            All rights reserved. © 2025 Entobo.
-          </p>
-        </div>
-
-        {/* Watermark */}
-        <span className="relative opacity-10 aspect-[4/1] grid">
-          <Image
-            src={"/logo-white.svg"}
-            fill
-            sizes="(max-width:640px) 640px, (max-width:768px) 768px, 1500px"
-            alt="Entobo Logo"
-          />
-        </span>
       </div>
     </footer>
   );
