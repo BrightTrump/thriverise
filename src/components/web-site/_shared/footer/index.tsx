@@ -49,36 +49,38 @@ export default function Footer() {
             </div>
           </div>
 
-          <nav className="grid sm:grid-flow-col [&>div]:grid [&>div]:gap-5 [&_h3]:text-lg [&_h3]:uppercase [&_h3]:font-bold gap-10 items-center">
+          <nav className="grid sm:grid-flow-col [&>div]:grid [&>div]:gap-5 [&_h3]:text-lg [&_h3]:uppercase [&_h3]:font-bold gap-10">
             <div>
               <h3>About Thriverise</h3>
               <Link href={"/about-us"}>About Us</Link>
-              <Link href={"/terms-of-services"}>Terms of Services</Link>
-              <Link href={"/privacy-policy"}>Privacy Policy</Link>
+              <Link href={"/terms-of-services"}>Our Work</Link>
+              <Link href={"/privacy-policy"}>Our Impact</Link>
             </div>
             <div>
               <h3>Get Involved</h3>
-              <Link href={"/pricing"}>Pricing</Link>
-              <Link href={"/contact-us"}>Contact Us</Link>
-              <Link href={"/coming-soon"}>Features</Link>
+              <Link href={"/pricing"}>Volunteer</Link>
+              <Link href={"/contact-us"}>Donate</Link>
+              <Link href={"/coming-soon"}>Partner With Us</Link>
+              <Link href={"/"}>Campus Ambassador Program</Link>
             </div>
             <div>
               <h3>Resources</h3>
-              <Link href={"/coming-soon"}>Integrations</Link>
-              <Link href={"/coming-soon"}>Documentation</Link>
               <Link href={"/coming-soon"}>Blog</Link>
+              <Link href={"/coming-soon"}>Reports</Link>
+              <Link href={"/coming-soon"}>Press Releases</Link>
+              <Link href={"/coming-soon"}>Media & Press</Link>
             </div>
           </nav>
         </div>
 
         {/* Copy Right and Links */}
-        <div className="grid sm:grid-flow-col justify-between gap-7">
+        <div className="w-full grid sm:grid-flow-col justify-between gap-7">
           <div className="grid order-2 sm:order-none">
             <p className="text-center opacity-70">
               © 2025 ThriveRise Africa. All Rights Reserved.
             </p>
           </div>
-          <div className="grid grid-flow-col sm:grid-cols-[auto_1fr] sm:gap-2 justify-between order-1 sm:order-none">
+          <div className="grid grid-flow-col gap-2 justify-between order-1 sm:order-none">
             <Link href={""}>Privacy Policy</Link>
             <Link href={""}>Terms of Use</Link>
           </div>
