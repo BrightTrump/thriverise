@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonProps } from "../types";
 
-export default function YellowFilledRounded({
+export default function GreenFilledRounded({
   children,
   className,
   disabled,
@@ -15,7 +15,7 @@ export default function YellowFilledRounded({
       onClick={onClick}
       disabled={disabled}
       className={`grid grid-flow-col gap-2 items-center justify-center 
-        font-bold text-lg rounded-4xl border border-[#183668] bg-[#01AED9] text-[#183668] px-5 py-3 transition-all duration-200
+        font-bold text-lg rounded-4xl border border-[#183668] bg-[#5EBB48] text-[#183668] px-5 py-3 transition-all duration-200
         ${
           disabled
             ? "opacity-60 cursor-not-allowed"

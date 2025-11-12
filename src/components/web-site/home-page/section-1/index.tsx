@@ -1,21 +1,23 @@
 import React from "react";
-import Cards from "./cards";
+import ThriveriseCommunity from "./thriverise-community";
+import ThriveriseLibrary from "./thriverise-library";
+import ThriveriseSkills from "./thriverise-skills";
+
 export default function Section1() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing bg-white">
-      <div className="container mx-auto grid gap-12 place-items-center">
-        <div className="max-w-2xl grid [&>h1]:text-[27px] [&>h1]:text-center [&>h1]:sm:text-3xl [&>h1]:text-[#020912]">
-          <h1>
-            <span className="font-bold">We Offer both immediate</span>{" "}
-            <span className="italic">tools</span>{" "}
-            <span className="font-bold">
-              and long-term platforms to support every stakeholder.
-            </span>{" "}
+    <section className="py-10 sm:py-20 layout-spacing">
+      <div className="container mx-auto  grid gap-12 lg:gap-16 items-center place-items-center">
+        <div className="text-[#183668]">
+          <h1 className="uppercase font-bold text-center text-3xl">
+            Our Latest Projects
           </h1>
         </div>
 
-        {/* Cards Content */}
-        <Cards />
+        <div className="grid gap-10">
+          <ThriveriseCommunity />
+          <ThriveriseLibrary />
+          <ThriveriseSkills />
+        </div>
       </div>
     </section>
   );

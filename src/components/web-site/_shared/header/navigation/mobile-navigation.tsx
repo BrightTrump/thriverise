@@ -49,9 +49,9 @@ export default function MobileNavigation() {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="fixed inset-0 bg-white w-full h-[100svh] grid py-5 overflow-hidden"
           >
-            <div className="grid gap-16 grid-flow-row content-start overflow-hidden">
+            <div className="grid gap-16 grid-flow-row content-start h-screen overflow-hidden">
               {/* Logo and Close button */}
-              <div className="px-5 ">
+              <div className="px-5 pt-16">
                 <div className="container mx-auto grid grid-flow-col items-center justify-between">
                   <Logo variant="black" className="w-14 h-14" />
 

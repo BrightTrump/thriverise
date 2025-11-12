@@ -1,32 +1,74 @@
+"use client";
 import React from "react";
-
+import { motion } from "framer-motion";
+import { Button, ButtonVariants } from "@/ui";
+import Image from "next/image";
+import Link from "next/link";
 export default function Section4() {
   return (
-    <section className="py-10 sm:py-20 grid gap-24 items-center place-items-center bg-[#000000]">
-      <div className="container mx-auto px-2 py-12 sm:p-0 max-w-2xl lg:max-w-4xl grid gap-5 text-center place-items-center text-white bg-[url(/website-ui/why-rakisi.png)] bg-no-repeat bg-cover bg-center">
-        <h1 className="font-bold text-[#020912]">
-          Why Rakisi?
-          <br />
-        </h1>
-
-        <p className="text-2xl sm:text-4xl">
-          <span className="font-bold">Nigeria&apos;s</span>{" "}
-          <span className="italic">Insurance </span>{" "}
-          <span className="font-bold">market is</span>{" "}
-          <span className="italic">evolving,</span>{" "}
-          <span className="font-bold">your</span>{" "}
-          <br className="hidden lg:block" />
-          <span className="italic">tools</span>{" "}
-          <span className="font-bold">should too</span>{" "}
-        </p>
-
-        <p className="text-sm sm:text-base">
-          Recent reforms have opened new opportunities, but also increased
-          operational demands on brokers. Rakisi brings everything you need into
-          one intuitive platform, helping you meet compliance requirements,
-          speed up processes, and deliver better service to your clients.
-        </p>
-      </div>
+    <section className="py-10 sm:py-20">
+      {/* Content */}
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="container mx-auto pl-5 md:pl-52"
+      >
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 pl-5 py-8 lg:py-20 items-center bg-[#FDB813] rounded-bl-[60px] md:rounded-bl-[100px] text-[#183668]">
+          <div className="grid gap-5 lg:gap-8 text-[#183668] order-2 lg:order-none pl-5">
+            <div className="grid gap-2.5">
+              <h1 className="uppercase font-bold text-2xl md:text-4xl">
+                Become a Campus Ambassador
+              </h1>
+              <p className="max-w-sm lg:max-w-md 2xl:max-w-xl">
+                Are you passionate about education and student access? Join the
+                ThriveRise Campus Ambassadors Program and become a voice for
+                change in your university.
+              </p>
+            </div>
+            <div>
+              <Link
+                href={
+                  "https://docs.google.com/forms/d/1J0RqmPMn4Tek6jYBNRxef5WP4gUqGDGZanzDppYqDJ4/viewform"
+                }
+                target="_blank"
+              >
+                <Button variant={ButtonVariants.SkyBlueFilledRounded}>
+                  Join as a Campus Ambassador
+                </Button>
+              </Link>
+            </div>
+          </div>
+          {/* <span className="relative w-full aspect-[1/0.7] mx-auto order-1 lg:order-none">
+            <Image
+              src={"/website-ui/campus-ambassador.svg"}
+              fill
+              sizes="1024px"
+              alt="Icon"
+            />
+          </span> */}
+          <div className="relative w-full aspect-[1/0.8] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full mx-auto order-1 lg:order-none">
+            <Image
+              src="/website-ui/campus-ambassador.svg"
+              fill
+              alt="Campus Ambassador Illustration"
+              className="object-contain"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </div>
+          {/* <span>
+            <Image
+              src={"/website-ui/campus-ambassador.svg"}
+              width={500}
+              height={500}
+              className="w-full mx-auto order-1 lg:order-none"
+              alt="Hero Image"
+            />
+          </span> */}
+        </div>
+      </motion.div>
     </section>
   );
 }

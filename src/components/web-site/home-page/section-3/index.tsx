@@ -1,61 +1,54 @@
-import React from "react";
+"use client";
 import { Icon, Icons } from "@/ui";
-import {
-  CHALLENGE_CARD,
-  CHALLENGE_CARD_2,
-} from "@/constants/home-page/cards.constant";
-
-export default function Section4() {
+import React from "react";
+export default function Section3() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing bg-white ">
-      <div className="container mx-auto max-w-screen-2xl  grid gap-24 items-center place-items-center">
-        <div className="max-w-2xl grid [&>h1]:text-2xl [&>h1]:text-center [&>h1]:sm:text-3xl [&>h1]:text-[#020912] font-bold">
-          <h1>
-            Why Rakisi Would Be The Best Decision Your Insurance Business Could
-            Ever Make
+    <section className="py-24 layout-spacing bg-[#02558B]">
+      <div className="container mx-auto grid gap-16.5 sm:gap-20 place-items-center text-[#183668]">
+        <div className="max-w-xl grid">
+          <h1 className="uppercase font-bold text-center text-3xl text-white">
+            Impact Stories
           </h1>
         </div>
 
-        <div className="max-w-5xl container mx-auto grid lg:grid-flow-col gap-12 items-center p-2 bg-[#E6EEFF] rounded-4xl">
-          <div className="p-5 sm:p-12 rounded-4xl">
-            <div className="max-w-2xs text-[#0052FE] font-bold text-2xl pb-7">
-              <h1>Challenge</h1>
-            </div>
-
-            <div className="grid gap-4 [&_p]:text-[#0052FE] text-sm sm:text-base">
-              {CHALLENGE_CARD.map((card, index) => (
-                <div
-                  key={index}
-                  className="grid grid-cols-[auto_1fr] gap-2 items-center w-full"
-                >
-                  <div className="w-6 h-6 grid place-items-center rounded-full bg-[#0052FE]">
-                    <Icon type={Icons.Wrong} size={16} color="#FFFFFF" />
-                  </div>
-                  <p>{card.title}</p>
-                </div>
-              ))}
+        {/* Content */}
+        <div className="px-5 mx-auto grid lg:grid-cols-3 gap-5 [&>div]:bg-white [&>div]:rounded-lg [&>div]:p-5 [&_span]:px-1 [&_span]:pt-4 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:uppercase [&_div]:grid [&_div]:gap-2.5 [&_p]:text-lg">
+          <div>
+            <span className="pb-16">
+              <Icon type={Icons.Quote} size={24} color="#183668" />
+            </span>
+            <div>
+              <p>
+                Before ThriveRise, I had no books for my final year project.
+                Their library saved me.
+              </p>
+              <h2>Chidinma, Final-Year Student, UNILORIN</h2>
             </div>
           </div>
 
-          {/* Card 2 */}
-          <div className="p-5 sm:p-12 bg-[#0052FE] rounded-4xl">
-            <div className="max-w-2xs text-[#FFFFFF] text-2xl pb-7">
-              <h1 className="font-bold">With Rakisi</h1>
+          <div>
+            <span className="pb-24">
+              <Icon type={Icons.Quote} size={24} color="#183668" />
+            </span>
+            <div>
+              <p>
+                Teaching at the Community Learning Center changed my life. I saw
+                what access really means.
+              </p>
+              <h2>Peace, Volunteer Teacher</h2>
             </div>
+          </div>
 
-            {/* Content with Icons */}
-            <div className="grid gap-4 [&_p]:text-[#FFFFFF] text-sm sm:text-base">
-              {CHALLENGE_CARD_2.map((card, index) => (
-                <div
-                  key={index}
-                  className="grid grid-cols-[auto_1fr] gap-2 items-center w-full"
-                >
-                  <div className="w-6 h-6 grid place-items-center rounded-full bg-white">
-                    <Icon type={Icons.Check} size={16} color="#000000" />
-                  </div>
-                  <p>{card.title}</p>
-                </div>
-              ))}
+          <div>
+            <span className="pb-24">
+              <Icon type={Icons.Quote} size={24} color="#183668" />
+            </span>
+            <div>
+              <p>
+                We started small, but ThriveRise is creating a big wave for
+                children like mine.
+              </p>
+              <h2>Local Parent, Tanke</h2>
             </div>
           </div>
         </div>
