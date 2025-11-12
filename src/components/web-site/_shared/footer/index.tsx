@@ -12,9 +12,9 @@ const SOCIALS_SCHEMA = [
 export default function Footer() {
   return (
     <footer className="overflow-hidden layout-spacing text-[#183668] pb-32 md:pb-56 2xl:pb-72">
-      <div className="container mx-auto relative grid gap-10 sm:gap-20 [@media(min-width:_480px)_and_(max-width:_768px)]:top-16 top-32 xl:top-40">
-        <div className="grid lg:grid-cols-2 lg:justify-between items-start gap-20">
-          <div className="grid gap-5 w-full">
+      <div className="w-full container mx-auto relative grid gap-10 sm:gap-20 [@media(min-width:_480px)_and_(max-width:_768px)]:top-16 top-32 xl:top-40">
+        <div className="grid lg:grid-flow-col lg:justify-between items-start gap-20">
+          <div className="grid gap-5 w-full md:w-max">
             {/* Logo */}
             <Logo variant="white" className="w-32 h-32" />
 
@@ -49,7 +49,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <nav className="w-max grid sm:grid-cols-3 [&>div]:grid [&>div]:gap-5 [&_h3]:text-lg [&_h3]:uppercase [&_h3]:font-bold gap-10 items-center">
+          <nav className="grid sm:grid-flow-col [&>div]:grid [&>div]:gap-5 [&_h3]:text-lg [&_h3]:uppercase [&_h3]:font-bold gap-10 items-center">
             <div>
               <h3>About Thriverise</h3>
               <Link href={"/about-us"}>About Us</Link>
@@ -78,7 +78,7 @@ export default function Footer() {
               © 2025 ThriveRise Africa. All Rights Reserved.
             </p>
           </div>
-          <div className="grid grid-flow-col lg:grid-cols-[auto_1fr] lg:gap-2 justify-between order-1 sm:order-none">
+          <div className="grid grid-flow-col sm:grid-cols-[auto_1fr] sm:gap-2 justify-between order-1 sm:order-none">
             <Link href={""}>Privacy Policy</Link>
             <Link href={""}>Terms of Use</Link>
           </div>
