@@ -14,7 +14,7 @@ export default function HeroSection() {
     >
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 lg:gap-0 items-center">
         <div className="grid gap-2.5 text-[#183668]">
-          <h1 className="uppercase font-bold text-6xl leading-[74px] lg:leading-[84px]">
+          <h1 className="uppercase font-bold text-5xl xl:text-6xl leading-[74px] lg:leading-[84px]">
             <span className="bg-[url(/website-ui/hero-improving-bg.svg)] bg-no-repeat bg-cover">
               Improving
             </span>{" "}
