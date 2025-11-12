@@ -56,12 +56,14 @@ export default function Footer() {
               <Link href={"/our-work"}>Our Work</Link>
               <Link href={"/our-impact"}>Our Impact</Link>
             </div>
+
             <div>
               <h3>Get Involved</h3>
               <Link
                 href={
                   "https://docs.google.com/forms/d/1pEjrGav1yRNVdfsIQvWyBx9JeeNtoqO_llAMyC34VaI/viewform"
                 }
+                target="_blank"
               >
                 Volunteer
               </Link>
@@ -69,6 +71,7 @@ export default function Footer() {
                 href={
                   "https://docs.google.com/forms/d/1k52tfwcK-_ZZik_RgSZJm4IIIByB_Nj9fovUBTT-eGM/viewform"
                 }
+                target="_blank"
               >
                 Donate
               </Link>
@@ -76,6 +79,7 @@ export default function Footer() {
                 href={
                   "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
                 }
+                target="_blank"
               >
                 Partner With Us
               </Link>
@@ -83,10 +87,12 @@ export default function Footer() {
                 href={
                   "https://docs.google.com/forms/d/1J0RqmPMn4Tek6jYBNRxef5WP4gUqGDGZanzDppYqDJ4/viewform"
                 }
+                target="_blank"
               >
                 Campus Ambassador Program
               </Link>
             </div>
+
             <div>
               <h3>Resources</h3>
               <Link href={"/coming-soon"}>Blog</Link>
@@ -100,7 +106,7 @@ export default function Footer() {
         {/* Copy Right and Links */}
         <div className="w-full grid sm:grid-flow-col justify-between gap-7">
           <div className="grid order-2 sm:order-none">
-            <p className="text-center opacity-70">
+            <p className="opacity-70">
               © 2025 ThriveRise Africa. All Rights Reserved.
             </p>
           </div>
