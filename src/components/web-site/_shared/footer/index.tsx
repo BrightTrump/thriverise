@@ -11,22 +11,26 @@ const SOCIALS_SCHEMA = [
 
 export default function Footer() {
   return (
-    <footer className="overflow-hidden layout-spacing text-[#183668] pb-36">
-      <div className="container mx-auto relative grid gap-10 sm:gap-20 top-10 [@media(min-width:_480px)_and_(max-width:_768px)]:top-16 md:top-20 lg:top-32 xl:top-40">
-        <div className="grid lg:grid-cols-2 lg:justify-between items-start gap-20">
-          <div className="grid gap-5 w-full">
+    <footer className="overflow-hidden layout-spacing text-[#183668] pb-32 md:pb-56 2xl:pb-72">
+      <div className="w-full container mx-auto relative grid gap-10 sm:gap-20 [@media(min-width:_480px)_and_(max-width:_768px)]:top-16 top-32 xl:top-40">
+        <div className="grid lg:grid-flow-col lg:justify-between items-start gap-20">
+          <div className="grid gap-5 w-full md:w-max">
             {/* Logo */}
-            <Logo variant="white" className="w-36" />
+            <Logo variant="white" className="w-32 h-32" />
 
-            <div className="grid gap-1 max-w-xs">
+            {/* Support Email */}
+            {/* <div className="grid gap-1 max-w-xs">
               <h3 className="text-2xl">Have questions? We have answers.</h3>
               <p className="font-medium opacity-70">
                 Send us an email via{" "}
-                <Link href={"mailto:sales@entobo.com"} className="underline">
-                  sales@entobo.com
+                <Link
+                  href={"mailto:support@thriverise.com"}
+                  className="underline"
+                >
+                  support@thriverise.com
                 </Link>
               </p>
-            </div>
+            </div> */}
 
             <div className="grid gap-3">
               {/* Socials */}
@@ -36,45 +40,47 @@ export default function Footer() {
                     key={index}
                     href={social.url}
                     target="_blank"
-                    className="w-7 h-7 rounded-full bg-white bg-opacity-15 grid place-content-center"
+                    className="w-7 h-7 rounded-full border border-[#183668] bg-[#01AED9] bg-opacity-15 grid place-content-center"
                   >
-                    <Icon type={social.icon} size={16} color="#FFFFFF" />
+                    <Icon type={social.icon} size={16} color="#183668" />
                   </Link>
                 ))}
               </div>
             </div>
           </div>
 
-          <nav className="w-max grid [&>div]:grid [&>div]:gap-5 [&_h3]:text-lg [&_h3]:uppercase [&_h3]:font-bold [@media(max-width:_480px)]:grid-cols-[repeat(2,_auto)] grid-cols-[repeat(3,_auto)] gap-10 items-center">
+          <nav className="grid sm:grid-flow-col [&>div]:grid [&>div]:gap-5 [&_h3]:text-lg [&_h3]:uppercase [&_h3]:font-bold gap-10">
             <div>
               <h3>About Thriverise</h3>
               <Link href={"/about-us"}>About Us</Link>
-              <Link href={"/terms-of-services"}>Terms of Services</Link>
-              <Link href={"/privacy-policy"}>Privacy Policy</Link>
+              <Link href={"/terms-of-services"}>Our Work</Link>
+              <Link href={"/privacy-policy"}>Our Impact</Link>
             </div>
             <div>
               <h3>Get Involved</h3>
-              <Link href={"/pricing"}>Pricing</Link>
-              <Link href={"/contact-us"}>Contact Us</Link>
-              <Link href={"/coming-soon"}>Features</Link>
+              <Link href={"/pricing"}>Volunteer</Link>
+              <Link href={"/contact-us"}>Donate</Link>
+              <Link href={"/coming-soon"}>Partner With Us</Link>
+              <Link href={"/"}>Campus Ambassador Program</Link>
             </div>
             <div>
               <h3>Resources</h3>
-              <Link href={"/coming-soon"}>Integrations</Link>
-              <Link href={"/coming-soon"}>Documentation</Link>
               <Link href={"/coming-soon"}>Blog</Link>
+              <Link href={"/coming-soon"}>Reports</Link>
+              <Link href={"/coming-soon"}>Press Releases</Link>
+              <Link href={"/coming-soon"}>Media & Press</Link>
             </div>
           </nav>
         </div>
 
         {/* Copy Right and Links */}
-        <div className="grid grid-flow-col justify-between">
-          <div className="grid">
+        <div className="w-full grid sm:grid-flow-col justify-between gap-7">
+          <div className="grid order-2 sm:order-none">
             <p className="text-center opacity-70">
               © 2025 ThriveRise Africa. All Rights Reserved.
             </p>
           </div>
-          <div className="grid grid-cols-[auto_1fr] gap-2">
+          <div className="grid grid-flow-col gap-2 justify-between order-1 sm:order-none">
             <Link href={""}>Privacy Policy</Link>
             <Link href={""}>Terms of Use</Link>
           </div>
