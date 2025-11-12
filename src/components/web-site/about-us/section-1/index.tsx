@@ -7,42 +7,61 @@ import { Button, ButtonVariants } from "@/ui";
 export default function Section1() {
   return (
     <section className="py-10 sm:py-20 layout-spacing">
-      <div className="container mx-auto grid gap-12 lg:gap-16 items-center place-items-center">
-        <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]"
-        >
-          <span className="relative w-full aspect-[1/0.7] ">
-            <Image
-              src={"/website-ui/thriverise-community.svg"}
-              fill
-              sizes="1024px"
-              alt="Icon"
-            />
-          </span>
+      <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="container mx-auto grid gap-5 items-center text-[#183668]"
+      >
+        <div className="grid gap-2.5">
+          <h1 className="text-6xl uppercase font-bold md:text-6xl">
+            About ThriveRise Africa
+          </h1>
+          <p className="md:text-xl lg:max-w-4xl leading-relaxed">
+            At ThriveRise, we believe that education and opportunity should
+            never be a privilege. We're on a mission to create equitable access
+            to learning, growth, and work for underserved children, youth, and
+            students across Nigeria and Africa.
+          </p>
+        </div>
 
-          <div className="grid gap-5 lg:gap-8 text-[#183668] pl-5">
-            <div className="grid gap-2.5">
-              <h1 className="uppercase font-bold text-2xl md:text-4xl">
-                ThriveRise Community Learning Centers
-              </h1>
-              <p className="lg:max-w-sm 2xl:max-w-xl">
-                We&apos;ve launched a grassroots education initiative providing
-                free basic education to out-of-school children in underserved
-                communities.
-              </p>
-            </div>
-            <div>
-              <Button variant={ButtonVariants.YellowFilledRounded}>
-                Learn More
-              </Button>
-            </div>
+        {/* Images Section */}
+        <div className="relative grid grid-flow-col justify-center md:justify-start gap-8 md:gap-16">
+          {/* Left Image */}
+          <div className="relative w-64 sm:w-80 md:w-96 aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-4 border-[#F5A623]">
+            <Image
+              src="/website-ui/about-hero.svg"
+              alt="Smiling child"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 40vw"
+            />
           </div>
-        </motion.div>
-      </div>
+
+          {/* Right Image */}
+          <div className="relative w-64 sm:w-80 md:w-96 aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-4 border-[#183668]">
+            <Image
+              src="/website-ui/about-hero-2.svg"
+              alt="Children learning"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 40vw"
+            />
+          </div>
+
+          {/* Center Overlapping Image */}
+          <div className="absolute bottom-[-40px] md:bottom-[-50px] left-1/2 -translate-x-1/2 md:left-[45%] w-56 sm:w-64 aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-4 border-[#0097A7]">
+            <Image
+              src="/website-ui/about-hero-3.svg"
+              alt="Happy children group"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 30vw"
+            />
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 }
