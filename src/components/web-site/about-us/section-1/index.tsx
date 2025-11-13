@@ -27,9 +27,9 @@ export default function Section1() {
         </div>
 
         {/* Images Section */}
-        <div className="relative grid grid-flow-col justify-center md:justify-start gap-8 md:gap-16">
+        <div className="relative grid lg:grid-flow-col gap-8 md:gap-16">
           {/* Left Image */}
-          <div className="relative w-64 sm:w-80 md:w-96 aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-4 border-[#F5A623]">
+          <div className="relative w-full aspect-[4/3] overflow-hidden">
             <Image
               src="/website-ui/about-hero.svg"
               alt="Smiling child"
@@ -40,7 +40,7 @@ export default function Section1() {
           </div>
 
           {/* Right Image */}
-          <div className="relative w-64 sm:w-80 md:w-96 aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-4 border-[#183668]">
+          <div className="relative w-full aspect-[4/3]">
             <Image
               src="/website-ui/about-hero-2.svg"
               alt="Children learning"
@@ -51,7 +51,7 @@ export default function Section1() {
           </div>
 
           {/* Center Overlapping Image */}
-          <div className="absolute bottom-[-40px] md:bottom-[-50px] left-1/2 -translate-x-1/2 md:left-[45%] w-56 sm:w-64 aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-4 border-[#0097A7]">
+          <div className="absolute bottom-[-40px] md:bottom-[-50px] left-1/2 -translate-x-1/2 md:left-[45%] w-56 sm:w-64 aspect-[4/3] overflow-hidden">
             <Image
               src="/website-ui/about-hero-3.svg"
               alt="Happy children group"
