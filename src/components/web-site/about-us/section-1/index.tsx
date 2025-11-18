@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Button, ButtonVariants } from "@/ui";
 
 export default function Section1() {
   return (
@@ -51,7 +50,7 @@ export default function Section1() {
           </div>
 
           {/* Center Overlapping Image */}
-          <div className="absolute bottom-[300px] md:bottom-[-59px] left-1/2 -translate-x-1/2 md:left-[50%] w-[75%] md:w-72 lg:w-96 aspect-[16/9] sm:aspect-[4/3]">
+          <div className="absolute bottom-[300px] md:bottom-[-59px] left-1/2 -translate-x-1/2 md:left-[50%] w-[75%] md:w-72 lg:w-96 aspect-[6/9] sm:aspect-[4/3]">
             <Image
               src="/website-ui/about-hero-3.svg"
               alt="Happy children group"
