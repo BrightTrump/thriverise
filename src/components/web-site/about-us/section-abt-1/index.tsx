@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function Section1() {
+export default function SectionAbout1() {
   return (
     <section className="py-10 sm:py-20 layout-spacing">
       <motion.div
