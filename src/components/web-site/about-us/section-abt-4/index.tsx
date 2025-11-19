@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
 export default function SectionAbout4() {
   return (
@@ -12,7 +12,7 @@ export default function SectionAbout4() {
           </p>
         </div>
         {/* Images Section */}
-        <div className="grid md:grid-flow-col gap-2">
+        <div className="grid md:grid-cols-2 gap-2">
           {/* Left Image */}
           <div className="relative w-full aspect-[4/3]">
             <Image
