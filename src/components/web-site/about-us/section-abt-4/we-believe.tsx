@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 export default function WeBelieve() {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
       className="grid gap-8 text-[#FFF8EB]"
