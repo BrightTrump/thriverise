@@ -12,12 +12,12 @@ export default function SectionAbout4() {
           </p>
         </div>
         {/* Images Section */}
-        <div className="relative grid md:grid-flow-col gap-8 md:gap-16 items-start">
+        <div className="grid md:grid-flow-col gap-2">
           {/* Left Image */}
           <div className="relative w-full aspect-[4/3]">
             <Image
               src="/website-ui/abt-img-2.svg"
-              alt="Smiling child"
+              alt="Tife"
               fill
               className="object-contain"
               sizes="(max-width: 768px) 100vw, 40vw"
@@ -28,7 +28,7 @@ export default function SectionAbout4() {
           <div className="relative w-full aspect-[4/3]">
             <Image
               src="/website-ui/abt-img-3.svg"
-              alt="Children learning"
+              alt="Saudat"
               fill
               className="object-contain"
               sizes="(max-width: 768px) 100vw, 40vw"
