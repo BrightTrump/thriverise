@@ -12,11 +12,11 @@ export default function WhoWeAre() {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 2, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
-      className="grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]"
+      className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center"
     >
-      <div className="grid gap-2.5 text-white order-2 lg:order-none pl-5">
-        <h1 className="uppercase font-bold text-2xl md:text-4xl">WHO WE ARE</h1>
-        <p className="lg:max-w-sm 2xl:max-w-xl">
+      <div className="grid gap-2.5 text-[#FFF8EB] order-2 lg:order-none">
+        <h1 className="uppercase font-bold text-2xl md:text-4xl">Who We Are</h1>
+        <p className="">
           ThriveRise Africa is a youth-led, nonprofit organization committed to
           advancing SDG 4 (Quality Education) and SDG 8 (Decent Work and
           Economic Growth) from the grassroots. We work with communities,
@@ -26,12 +26,7 @@ export default function WhoWeAre() {
         </p>
       </div>
       <span className="relative w-full aspect-[1/0.7] mx-auto order-1 lg:order-none">
-        <Image
-          src={"/website-ui/thriverise-library.svg"}
-          fill
-          sizes="1024px"
-          alt="Icon"
-        />
+        <Image src={"/website-ui/abt-img.svg"} fill sizes="1024px" alt="Icon" />
       </span>
     </motion.div>
   );
