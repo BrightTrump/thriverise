@@ -3,7 +3,7 @@ import Section1 from "@/components/web-site/home-page/section-1";
 import Section2 from "@/components/web-site/home-page/section-2";
 import Section3 from "@/components/web-site/home-page/section-3";
 import Section4 from "@/components/web-site/home-page/section-4";
-import Section5 from "@/components/web-site/home-page/section-5";
+import SupportOurWork from "@/components/web-site/_shared/support-our-work";
 
 export default function Page() {
   return (
@@ -13,7 +13,7 @@ export default function Page() {
       <Section2 />
       <Section3 />
       <Section4 />
-      <Section5 />
+      <SupportOurWork />
     </main>
   );
 }

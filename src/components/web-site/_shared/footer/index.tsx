@@ -53,16 +53,46 @@ export default function Footer() {
             <div>
               <h3>About Thriverise</h3>
               <Link href={"/about-us"}>About Us</Link>
-              <Link href={"/terms-of-services"}>Our Work</Link>
-              <Link href={"/privacy-policy"}>Our Impact</Link>
+              <Link href={"/our-work"}>Our Work</Link>
+              <Link href={"/our-impact"}>Our Impact</Link>
             </div>
+
             <div>
               <h3>Get Involved</h3>
-              <Link href={"/pricing"}>Volunteer</Link>
-              <Link href={"/contact-us"}>Donate</Link>
-              <Link href={"/coming-soon"}>Partner With Us</Link>
-              <Link href={"/"}>Campus Ambassador Program</Link>
+              <Link
+                href={
+                  "https://docs.google.com/forms/d/1pEjrGav1yRNVdfsIQvWyBx9JeeNtoqO_llAMyC34VaI/viewform"
+                }
+                target="_blank"
+              >
+                Volunteer
+              </Link>
+              <Link
+                href={
+                  "https://docs.google.com/forms/d/1k52tfwcK-_ZZik_RgSZJm4IIIByB_Nj9fovUBTT-eGM/viewform"
+                }
+                target="_blank"
+              >
+                Donate
+              </Link>
+              <Link
+                href={
+                  "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
+                }
+                target="_blank"
+              >
+                Partner With Us
+              </Link>
+              <Link
+                href={
+                  "https://docs.google.com/forms/d/1J0RqmPMn4Tek6jYBNRxef5WP4gUqGDGZanzDppYqDJ4/viewform"
+                }
+                target="_blank"
+              >
+                Campus Ambassador Program
+              </Link>
             </div>
+
             <div>
               <h3>Resources</h3>
               <Link href={"/coming-soon"}>Blog</Link>
@@ -76,13 +106,13 @@ export default function Footer() {
         {/* Copy Right and Links */}
         <div className="w-full grid sm:grid-flow-col justify-between gap-7">
           <div className="grid order-2 sm:order-none">
-            <p className="text-center opacity-70">
+            <p className="opacity-70">
               © 2025 ThriveRise Africa. All Rights Reserved.
             </p>
           </div>
           <div className="grid grid-flow-col gap-2 justify-between order-1 sm:order-none">
-            <Link href={""}>Privacy Policy</Link>
-            <Link href={""}>Terms of Use</Link>
+            <Link href={"/privacy-policy"}>Privacy Policy</Link>
+            <Link href={"/terms-of-services"}>Terms of Use</Link>
           </div>
         </div>
       </div>
