@@ -77,8 +77,8 @@ export default function MobileNavigation() {
                   <NavigationItem url="/resources" onClick={handleToggle}>
                     Resources
                   </NavigationItem>
-                  <NavigationItem url="/media" onClick={handleToggle}>
-                    Media
+                  <NavigationItem url="/team" onClick={handleToggle}>
+                    Team
                   </NavigationItem>
                   <NavigationItem url="/get-involved" onClick={handleToggle}>
                     Get Involved
