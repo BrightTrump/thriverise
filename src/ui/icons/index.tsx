@@ -3,6 +3,7 @@ import ChevronDown from "./chevron-down";
 import ChevronLeft from "./chevron-left";
 import ChevronRight from "./chevron-right";
 import ChevronUp from "./chevron-up";
+import Dot from "./dot";
 import Facebook from "./facebook";
 import Instagram from "./instagram";
 import Linkedin from "./linkedin";
@@ -31,6 +32,9 @@ export function Icon({ type, color, size }: Props) {
 
     case Icons.ChevronUp:
       return <ChevronUp {...props} />;
+
+    case Icons.Dot:
+      return <Dot {...props} />;
 
     case Icons.Facebook:
       return <Facebook {...props} />;

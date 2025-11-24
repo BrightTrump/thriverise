@@ -4,7 +4,7 @@ import SectionGetInv3 from "@/components/web-site/get-involved/section-get-inv-3
 
 export default function Page() {
   return (
-    <main className="overflow-hidden grid gap-8">
+    <main className="overflow-hidden">
       <SectionGetInv1 />
       <SectionGetInv2 />
       <SectionGetInv3 />
