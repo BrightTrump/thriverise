@@ -24,7 +24,7 @@ export default function SectionGetInv2() {
           />
         </span>
 
-        <div className="grid gap-5 lg:gap-8 text-[#183668] pl-5">
+        <div className="grid gap-5 lg:gap-8 text-[#183668] pl-2 ">
           <div className="grid gap-2.5">
             <h1 className="uppercase font-bold text-2xl md:text-4xl">
               Volunteer With Us
