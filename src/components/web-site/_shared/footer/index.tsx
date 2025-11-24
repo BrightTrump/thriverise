@@ -49,7 +49,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <nav className="grid sm:grid-flow-col [&>div]:grid [&>div]:gap-5 [&_h3]:text-lg [&_h3]:uppercase [&_h3]:font-bold gap-10">
+          <nav className="grid sm:grid-flow-col items-start [&>div]:grid [&>div]:gap-5 [&_h3]:text-lg [&_h3]:uppercase [&_h3]:font-bold gap-10">
             <div>
               <h3>About Thriverise</h3>
               <Link href={"/about-us"}>About Us</Link>
