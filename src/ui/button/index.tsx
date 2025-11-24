@@ -5,6 +5,7 @@ import CreamFilledRounded from "./cream-filled-rounded";
 import YellowFilledRounded from "./yellow-filled-rounded";
 import SkyBlueFilledRounded from "./sky-blue-filled-rounded";
 import GreenFilledRounded from "./green-filled-rounded";
+import SkyBlueWhiteFilledRounded from "./sky-blue-white-filled-rounded copy";
 
 export function Button(props: ButtonProps) {
   switch (props.variant) {
@@ -19,6 +20,9 @@ export function Button(props: ButtonProps) {
 
     case ButtonVariants.SkyBlueFilledRounded:
       return <SkyBlueFilledRounded {...props} />;
+
+    case ButtonVariants.SkyBlueWhiteFilledRounded:
+      return <SkyBlueWhiteFilledRounded {...props} />;
 
     default:
       return <Default {...props} />;

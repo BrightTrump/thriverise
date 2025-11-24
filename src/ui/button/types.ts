@@ -14,4 +14,5 @@ export enum ButtonVariants {
   GreenFilledRounded = "green-filled-rounded",
   YellowFilledRounded = "yellow-filled-rounded",
   SkyBlueFilledRounded = "sky-blue-filled-rounded",
+  SkyBlueWhiteFilledRounded = "sky-blue-white-filled-rounded",
 }

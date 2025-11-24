@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonProps } from "../types";
 
-export default function SkyBlueFilledRounded({
+export default function SkyBlueWhiteFilledRounded({
   children,
   className,
   disabled,
@@ -23,7 +23,7 @@ export default function SkyBlueFilledRounded({
         }
         ${className}`}
       style={{
-        boxShadow: "4px 4px 0 #183668",
+        boxShadow: "4px 4px 0 #FFFFFF",
       }}
     >
       {isLoading ? (

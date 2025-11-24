@@ -14,7 +14,7 @@ export default function SectionGetInv3() {
         viewport={{ once: true, amount: 0.2 }}
         className="container mx-auto grid lg:grid-cols-2 gap-3 items-center text-white"
       >
-        <div className="grid gap-2.5 text-[#183668] order-2 lg:order-none pl-5">
+        <div className="grid gap-2.5 order-2 lg:order-none pl-5">
           <h1 className="uppercase font-bold text-2xl md:text-4xl lg:text-5xl">
             Donate to Support Education Access
           </h1>
@@ -49,7 +49,7 @@ export default function SectionGetInv3() {
               }
               target="_blank"
             >
-              <Button variant={ButtonVariants.YellowFilledRounded}>
+              <Button variant={ButtonVariants.SkyBlueWhiteFilledRounded}>
                 Make a Donation Now
               </Button>
             </Link>
