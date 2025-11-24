@@ -1,3 +1,4 @@
+import JoinOurTeam from "@/components/web-site/about-us/join-our-team";
 import SectionAbout1 from "@/components/web-site/about-us/section-abt-1";
 import SectionAbout2 from "@/components/web-site/about-us/section-abt-2";
 import SectionAbout3 from "@/components/web-site/about-us/section-abt-3";
@@ -10,6 +11,7 @@ export default function Page() {
       <SectionAbout2 />
       <SectionAbout3 />
       <SectionAbout4 />
+      <JoinOurTeam />
     </main>
   );
 }
