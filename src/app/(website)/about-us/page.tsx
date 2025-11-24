@@ -4,6 +4,7 @@ import SectionAbout3 from "@/components/web-site/about-us/section-abt-3";
 import SectionAbout4 from "@/components/web-site/about-us/section-abt-4";
 import JoinOurTeam from "@/components/web-site/about-us/section-abt-5";
 import SectionAbout6 from "@/components/web-site/about-us/section-abt-6";
+import SectionAbout8 from "@/components/web-site/about-us/section-abt-8";
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <SectionAbout4 />
       <JoinOurTeam />
       <SectionAbout6 />
+      <SectionAbout8 />
     </main>
   );
 }
