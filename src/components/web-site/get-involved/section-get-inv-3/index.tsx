@@ -58,7 +58,7 @@ export default function SectionGetInv3() {
 
         <span className="relative w-full aspect-[1/0.7] mx-auto order-1 lg:order-none">
           <Image
-            src={"/website-ui/thriverise-moment.svg"}
+            src={"/website-ui/donate-support.svg"}
             fill
             sizes="1024px"
             alt="Icon"

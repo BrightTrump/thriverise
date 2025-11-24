@@ -2,12 +2,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Button, ButtonVariants } from "@/ui";
+import { Button, ButtonVariants, Icon, Icons } from "@/ui";
 import Link from "next/link";
 
-export default function SectionGetInv2() {
+export default function SectionGetInv4() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing bg-[#01AED9]">
+    <section className="py-10 sm:py-20 layout-spacing bg-[#FDB813]">
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -17,24 +17,40 @@ export default function SectionGetInv2() {
       >
         <span className="relative w-full aspect-[1/0.7] ">
           <Image
-            src={"/website-ui/volunteer.svg"}
+            src={"/website-ui/partner-with.svg"}
             fill
             sizes="1024px"
             alt="Icon"
           />
         </span>
+        <div className="grid gap-2.5 order-2 lg:order-none pl-5">
+          <h1 className="uppercase font-bold text-2xl md:text-4xl lg:text-5xl">
+            Partner With Us
+          </h1>
+          <p className="">
+            Are you an organization, brand, foundation, or institution
+            passionate about youth empowerment and access to education? <br />{" "}
+            Let&apos;s work together!
+          </p>
+          <p>We&apos;re open to:</p>
 
-        <div className="grid gap-5 lg:gap-8 text-[#183668] pl-2 ">
-          <div className="grid gap-2.5">
-            <h1 className="uppercase font-bold text-2xl md:text-4xl">
-              Volunteer With Us
-            </h1>
-            <p className="lg:max-w-md 2xl:max-w-xl">
-              Be a part of something meaningful. We&apos;re always looking for
-              passionate volunteers , teachers, creatives, project coordinators,
-              tech folks, and social changemakers, to help bring our work to
-              life.
-            </p>
+          <div className="grid gap-2.5 [&>div]:grid [&>div]:grid-cols-[auto_1fr] [&>div]:gap-2 [&>div]:items-center pb-4">
+            <div>
+              <Icon type={Icons.Dot} size={18} color="#027EBE" />
+              <p>In-kind donations (books, tech, materials)</p>
+            </div>
+            <div>
+              <Icon type={Icons.Dot} size={18} color="#027EBE" />
+              <p>Internship & mentorship opportunities for students</p>
+            </div>
+            <div>
+              <Icon type={Icons.Dot} size={18} color="#027EBE" />
+              <p>Grant support for our library or learning centers</p>
+            </div>
+            <div>
+              <Icon type={Icons.Dot} size={18} color="#027EBE" />
+              <p>Awareness partnerships with student groups or CSR teams</p>
+            </div>
           </div>
           <div>
             <Link
@@ -43,8 +59,8 @@ export default function SectionGetInv2() {
               }
               target="_blank"
             >
-              <Button variant={ButtonVariants.YellowFilledRounded}>
-                Sign Up to Volunteer
+              <Button variant={ButtonVariants.SkyBlueFilledRounded}>
+                Request a Partnership Proposal
               </Button>
             </Link>
           </div>
