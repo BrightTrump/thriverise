@@ -21,7 +21,7 @@ export default function Section4() {
               <h1 className="uppercase font-bold text-2xl md:text-4xl">
                 Become a Campus Ambassador
               </h1>
-              <p className="max-w-sm lg:max-w-md 2xl:max-w-xl">
+              <p className="lg:max-w-md 2xl:max-w-xl">
                 Are you passionate about education and student access? Join the
                 ThriveRise Campus Ambassadors Program and become a voice for
                 change in your university.

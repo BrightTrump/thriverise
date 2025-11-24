@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Rethink_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 
-const rethink_Sans = Rethink_Sans({
-  weight: ["400", "500", "600", "700", "800"],
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={rethink_Sans.className} suppressHydrationWarning={true}>
+      <body className={poppins.className} suppressHydrationWarning={true}>
         <NextTopLoader
           color="#c1c1c1"
           showSpinner={false}

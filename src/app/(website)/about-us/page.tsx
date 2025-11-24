@@ -2,6 +2,10 @@ import SectionAbout1 from "@/components/web-site/about-us/section-abt-1";
 import SectionAbout2 from "@/components/web-site/about-us/section-abt-2";
 import SectionAbout3 from "@/components/web-site/about-us/section-abt-3";
 import SectionAbout4 from "@/components/web-site/about-us/section-abt-4";
+import JoinOurTeam from "@/components/web-site/about-us/section-abt-5";
+import SectionAbout6 from "@/components/web-site/about-us/section-abt-6";
+import SectionAbout7 from "@/components/web-site/about-us/section-abt-7";
+import SectionAbout8 from "@/components/web-site/about-us/section-abt-8";
 
 export default function Page() {
   return (
@@ -10,6 +14,10 @@ export default function Page() {
       <SectionAbout2 />
       <SectionAbout3 />
       <SectionAbout4 />
+      <JoinOurTeam />
+      <SectionAbout6 />
+      <SectionAbout7 />
+      <SectionAbout8 />
     </main>
   );
 }
