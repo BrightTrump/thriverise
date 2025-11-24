@@ -13,11 +13,11 @@ export default function SectionGetInv2() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
-        className="grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]"
+        className="container mx-auto grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]"
       >
         <span className="relative w-full aspect-[1/0.7] ">
           <Image
-            src={"/website-ui/thriverise-skills.svg"}
+            src={"/website-ui/volunteer.svg"}
             fill
             sizes="1024px"
             alt="Icon"
@@ -29,9 +29,11 @@ export default function SectionGetInv2() {
             <h1 className="uppercase font-bold text-2xl md:text-4xl">
               Volunteer With Us
             </h1>
-            <p className="lg:max-w-sm 2xl:max-w-xl">
-              A skills empowerment program for youths, providing vocational
-              training, job readiness, and entrepreneurship support.
+            <p className="lg:max-w-md 2xl:max-w-xl">
+              Be a part of something meaningful. We&apos;re always looking for
+              passionate volunteers , teachers, creatives, project coordinators,
+              tech folks, and social changemakers, to help bring our work to
+              life.
             </p>
           </div>
           <div>
@@ -41,8 +43,8 @@ export default function SectionGetInv2() {
               }
               target="_blank"
             >
-              <Button variant={ButtonVariants.GreenFilledRounded}>
-                Partner With Us
+              <Button variant={ButtonVariants.YellowFilledRounded}>
+                Sign Up to Volunteer
               </Button>
             </Link>
           </div>
