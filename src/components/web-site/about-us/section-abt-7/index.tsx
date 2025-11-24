@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function SectionAbout8() {
+export default function SectionAbout7() {
   return (
     <section className="py-20 layout-spacing">
       <motion.div
@@ -14,11 +14,16 @@ export default function SectionAbout8() {
       >
         <div className="text-center">
           <h1 className="uppercase font-bold text-center text-4xl lg:text-6xl">
-            Recognitions for Our Work
+            Financial Statements
           </h1>
           <div className="max-w-xl md:text-lg">
-            <p>We are proud of the early impact our work is making.</p>
-            <p>Though we are still growing, ThriveRise has already received:</p>
+            <p>We believe in transparency and stewardship.</p>
+            <p>
+              Our financial statements and activity reports will be published
+              annually and made available for public access, beginning from our
+              first audited cycle. This includes:
+            </p>
+            <p>First statement to be released by Jan 2026</p>
           </div>
         </div>
 
