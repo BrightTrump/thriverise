@@ -10,10 +10,10 @@ export default function SectionAbout8() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
-        className="grid gap-12 md:gap-24 text-[#183668]"
+        className="container mx-auto grid gap-12 md:gap-24 text-[#183668]"
       >
-        <div className="text-center">
-          <h1 className="uppercase font-bold text-center text-4xl lg:text-6xl">
+        <div className="text-center place-items-center">
+          <h1 className="uppercase font-bold text-4xl lg:text-6xl">
             Recognitions for Our Work
           </h1>
           <div className="max-w-xl md:text-lg">
