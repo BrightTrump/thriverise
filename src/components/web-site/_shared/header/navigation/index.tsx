@@ -13,7 +13,7 @@ export default function Navigation() {
         <NavigationItem url="/our-work">Our Work</NavigationItem>
         <NavigationItem url="/resources">Resources</NavigationItem>
         <NavigationItem url="/media">Media</NavigationItem>
-        <NavigationItem url="/get-nvolved">Get Involved</NavigationItem>
+        <NavigationItem url="/get-involved">Get Involved</NavigationItem>
         <NavigationItem url="/contact">Contact</NavigationItem>
       </div>
     </>
