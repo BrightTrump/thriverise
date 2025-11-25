@@ -112,7 +112,7 @@ export default function Footer() {
           </div>
           <div className="grid grid-flow-col gap-2 justify-between order-1 sm:order-none">
             <Link href={"/privacy-policy"}>Privacy Policy</Link>
-            <Link href={"/terms-of-services"}>Terms of Use</Link>
+            <Link href={"/terms-of-use"}>Terms of Use</Link>
           </div>
         </div>
       </div>
