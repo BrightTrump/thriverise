@@ -7,14 +7,17 @@ export default function SupportOurWork() {
   return (
     <section className="py-10 sm:py-20 layout-spacing grid gap-24 items-center">
       <div className="container mx-auto max-w-6xl px-12 grid gap-8 bg-[#183668] rounded-4xl py-16">
-        <div className="grid gap-2.5 text-white">
+        <div className="grid gap-2.5 text-white [&>p]:max-w-sm [&>p]:md:max-w-lg [&>p]:lg:max-w-xl [&>p]:md:text-lg">
           <h1 className="uppercase font-bold text-4xl md:text-6xl">
             Support Our Work
           </h1>
-          <p className="max-w-sm md:max-w-lg lg:max-w-xl md:text-lg">
+          <p>
             Every donation, partnership, or material support helps us reach more
-            children and youth in need. You can give a child a classroom, a
-            student a research paper, or a youth a skill for life.
+            children and youth in need.
+          </p>
+          <p>
+            You can give a child a classroom, a student a research paper, or a
+            youth a skill for life.
           </p>
         </div>
         <div className="grid sm:grid-cols-[auto_1fr] gap-5 sm:gap-2 items-center">

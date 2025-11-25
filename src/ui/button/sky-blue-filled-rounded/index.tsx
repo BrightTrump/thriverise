@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonProps } from "../types";
 
-export default function YellowFilledRounded({
+export default function SkyBlueFilledRounded({
   children,
   className,
   disabled,

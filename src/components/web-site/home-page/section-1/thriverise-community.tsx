@@ -24,7 +24,7 @@ export default function ThriveriseCommunity() {
 
       <div className="grid gap-5 lg:gap-8 text-[#183668] pl-5">
         <div className="grid gap-2.5">
-          <h1 className="uppercase font-bold text-2xl md:text-4xl">
+          <h1 className="uppercase font-bold text-2xl md:text-4xl 2xl:text-5xl">
             ThriveRise Community Learning Centers
           </h1>
           <p className="lg:max-w-sm 2xl:max-w-xl">
