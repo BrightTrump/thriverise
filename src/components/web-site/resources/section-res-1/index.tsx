@@ -27,7 +27,7 @@ export default function SectionResources1() {
 
         <span className="relative w-full aspect-[1/0.7] mx-auto">
           <Image
-            src={"/website-ui/thriverise-moment.svg"}
+            src={"/website-ui/resources.svg"}
             fill
             sizes="1024px"
             alt="Icon"
