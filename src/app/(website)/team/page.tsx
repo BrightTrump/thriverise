@@ -2,7 +2,7 @@ import TeamHeroSection from "@/components/web-site/team/team-hero-section";
 import Sectionteam1 from "@/components/web-site/team/section-team-1";
 import Sectionteam2 from "@/components/web-site/team/section-team-2";
 import Sectionteam3 from "@/components/web-site/team/section-team-3";
-import Sectionteam4 from "@/components/web-site/team/section-team-4";
+import SupportOurWork from "@/components/web-site/_shared/support-our-work";
 
 export default function Page() {
   return (
@@ -11,7 +11,7 @@ export default function Page() {
       <Sectionteam1 />
       <Sectionteam2 />
       <Sectionteam3 />
-      <Sectionteam4 />
+      <SupportOurWork />
     </main>
   );
 }

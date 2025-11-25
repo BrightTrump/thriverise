@@ -2,68 +2,45 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Button, ButtonVariants, Icon, Icons } from "@/ui";
-import Link from "next/link";
+
 export default function SectionTeam3() {
   return (
     <section className="py-10 sm:py-20 layout-spacing bg-[#183668]">
       <motion.div
-        initial={{ opacity: 0, x: -100 }}
+        initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
-        className="container mx-auto grid lg:grid-cols-2 gap-3 items-center text-white"
+        className="container mx-auto grid gap-16 text-white"
       >
-        <div className="grid gap-2.5 order-2 lg:order-none pl-5">
-          <h1 className="uppercase font-bold text-2xl md:text-4xl lg:text-5xl">
-            Donate to Support Education Access
+        <div className="text-center">
+          <h1 className="uppercase font-bold text-3xl sm:text-4xl lg:text-5xl">
+            Our Directors
           </h1>
-          <p className="">
-            Every ₦1000, $1, or £1 you give helps us reach another learner with
-            the tools they need to rise.
-          </p>
-          <p>Your donation supports:</p>
+        </div>
+        <div className="grid lg:grid-flow-col gap-7 lg:gap-12 lg:px-24">
+          <Image
+            src="/website-ui/abt-img-3.svg"
+            width={400}
+            height={400}
+            className="w-full"
+            alt="Saudat"
+          />
 
-          <div className="grid gap-2.5 [&>div]:grid [&>div]:grid-cols-[auto_1fr] [&>div]:gap-2 [&>div]:items-center pb-4">
-            <div>
-              <Icon type={Icons.Dot} size={18} color="#027EBE" />
-              <p>Free school supplies & educational materials</p>
-            </div>
-            <div>
-              <Icon type={Icons.Dot} size={18} color="#027EBE" />
-              <p>Digital resources for university students</p>
-            </div>
-            <div>
-              <Icon type={Icons.Dot} size={18} color="#027EBE" />
-              <p>Vocational training for underserved youth</p>
-            </div>
-            <div>
-              <Icon type={Icons.Dot} size={18} color="#027EBE" />
-              <p>Safe learning spaces in low-income communities</p>
-            </div>
-          </div>
-          <div>
-            <Link
-              href={
-                "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
-              }
-              target="_blank"
-            >
-              <Button variant={ButtonVariants.SkyBlueWhiteFilledRounded}>
-                Make a Donation Now
-              </Button>
-            </Link>
+          <div className="pl-2">
+            <p>
+              Saudat Imam is the Director of Education at ThriveRise, where she
+              leads the design and execution of innovative learning strategies
+              that bridge education and technology. With expertise in product
+              management, curriculum design, and digital learning, she drives
+              programs that empower learners and educators while ensuring
+              scalable impact. Passionate about inclusive and future-ready
+              education, Saudat focuses on creating transformative learning
+              experiences that prepare individuals and communities for the
+              evolving world of work.
+            </p>
           </div>
         </div>
-
-        <span className="relative w-full aspect-[1/0.7] mx-auto order-1 lg:order-none">
-          <Image
-            src={"/website-ui/donate-support.svg"}
-            fill
-            sizes="1024px"
-            alt="Icon"
-          />
-        </span>
       </motion.div>
     </section>
   );

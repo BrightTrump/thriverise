@@ -2,51 +2,55 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Button, ButtonVariants } from "@/ui";
-import Link from "next/link";
 
 export default function SectionTeam2() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing bg-[#01AED9]">
+    <section className="py-10 sm:py-20 layout-spacing bg-[#183668]">
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
-        className="container mx-auto grid lg:grid-cols-2 gap-3 lg:gap-24 items-center text-[#183668]"
+        className="container mx-auto text-white"
       >
-        <span className="relative w-full aspect-[1/0.7] ">
+        <div className="grid lg:grid-flow-col gap-7 lg:gap-12 lg:px-24">
           <Image
-            src={"/website-ui/volunteer.svg"}
-            fill
-            sizes="1024px"
-            alt="Icon"
+            src="/website-ui/team-2.svg"
+            width={400}
+            height={400}
+            className="w-full"
+            alt="Saudat"
           />
-        </span>
 
-        <div className="grid gap-5 lg:gap-8 text-[#183668] pl-2 ">
-          <div className="grid gap-2.5">
-            <h1 className="uppercase font-bold text-2xl md:text-4xl">
-              Volunteer With Us
-            </h1>
-            <p className="lg:max-w-md 2xl:max-w-xl">
-              Be a part of something meaningful. We&apos;re always looking for
-              passionate volunteers , teachers, creatives, project coordinators,
-              tech folks, and social changemakers, to help bring our work to
-              life.
+          <div className="pl-2">
+            <p>
+              Boluwatife Adeleke is a purpose-driven leader working at the
+              intersection of social impact, marketing, and operations. <br />
+              She is the Founder of Thrive Rise, a nonprofit organization
+              committed to promoting SDG 4 (Quality Education) and SDG 8 (Decent
+              Work and Economic Growth). Through Thrive Rise, she&apos;s
+              creating pathways for underserved children to access education and
+              empowering young people with the tools, mentorship, and training
+              they need to thrive and contribute meaningfully to the economy.{" "}
+              <br />
+              She also leads Martvest, an e-commerce initiative designed to
+              economically empower women in low-income communities by giving
+              their locally made products visibility through a digital
+              marketplace, bridging the gap between informal creators and
+              mainstream consumers. <br />
+              With a background in marketing and business operations, Boluwatife
+              brings a strategic, people-centered approach to everything she
+              builds. Her work doesn&apos;t just center impact, it is powered by
+              effective communication, community building, and execution. Even
+              within her nonprofit and startup ventures, she continues to drive
+              brand strategy, campaign management, and operational growth,
+              proving that marketing and mission are not mutually exclusive.{" "}
+              <br />A multi-passionate builder, Boluwatife is driven by a desire
+              to create systems that work, for people, for businesses, and for
+              society. Whether she&apos;s designing programs, building teams,
+              leading campaigns, or mobilizing communities, she shows up with
+              intentionality, clarity, and heart.
             </p>
-          </div>
-          <div>
-            <Link
-              href={
-                "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
-              }
-              target="_blank"
-            >
-              <Button variant={ButtonVariants.YellowFilledRounded}>
-                Sign Up to Volunteer
-              </Button>
-            </Link>
           </div>
         </div>
       </motion.div>
