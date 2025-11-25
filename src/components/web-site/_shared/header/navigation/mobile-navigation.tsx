@@ -71,9 +71,9 @@ export default function MobileNavigation() {
                   <NavigationItem url="/about-us" onClick={handleToggle}>
                     About Us
                   </NavigationItem>
-                  <NavigationItem url="/our-work" onClick={handleToggle}>
+                  {/* <NavigationItem url="/our-work" onClick={handleToggle}>
                     Our Work
-                  </NavigationItem>
+                  </NavigationItem> */}
                   <NavigationItem url="/resources" onClick={handleToggle}>
                     Resources
                   </NavigationItem>
