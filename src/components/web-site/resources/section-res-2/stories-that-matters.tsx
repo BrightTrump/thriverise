@@ -51,20 +51,17 @@ export default function StoriesGrid() {
             </div>
 
             {/* Title */}
-            <div className="px-2 min-h-[100px]">
+            <div className="px-2 min-h-[110px]">
               <h2 className="text-[22px] md:text-[26px] font-extrabold leading-tight">
                 {story.title}
               </h2>
             </div>
 
             {/* Footer */}
-            <div className="px-4 flex items-center justify-between">
+            <div className="px-4 flex items-center justify-between pt-4">
               <p className="text-[16px] font-medium">Read more</p>
 
-              <Button
-                variant={ButtonVariants.YellowNoBgFilledRounded}
-                className=""
-              >
+              <Button variant={ButtonVariants.YellowNoBgFilledRounded}>
                 <Icon type={Icons.ArrowRight} size={20} color="#183668" />
               </Button>
             </div>
