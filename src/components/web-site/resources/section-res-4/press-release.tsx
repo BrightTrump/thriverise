@@ -5,23 +5,22 @@ import Image from "next/image";
 import { Button, ButtonVariants, Icon, Icons } from "@/ui";
 import Link from "next/link";
 
-export default function StoriesGrid() {
+export default function PressRelease() {
   const stories = [
     {
       id: 1,
-      title:
-        "Bringing Books to the Streets The Journey of Our Campus Resource Drive",
+      title: "ThriveRise Launches Community Learning Center in Tanke, Ilorin",
       img: "/website-ui/resources-2.svg",
     },
     {
       id: 2,
-      title: "What It's Like Learning at the ThriveRise Learning Center",
+      title: "Partnership Announced with [Partner Name]",
       img: "/website-ui/resources-3.svg",
     },
     {
       id: 3,
       title:
-        "Why Access to Education Still Isn't Equal — and What We're Doing About It",
+        "ThriveRise Recognized Among Top Youth-Driven NGOs to Watch in 2025",
       img: "/website-ui/resources-4.svg",
     },
   ];
