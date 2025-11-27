@@ -12,7 +12,7 @@ export default function StoriesThatMatters() {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 2, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
-      className="grid lg:grid-flow-col gap-3 lg:gap-10 items-center text-[#183668] [&>div]:border-2 [&>div]:border-[#183668] [&>div]:rounded-lg [&>div]:h-fit"
+      className="grid lg:grid-flow-col gap-3 lg:gap-10 items-center text-[#183668] [&>div]:border-2 [&>div]:border-[#183668] [&>div]:rounded-lg [&>div]:min-h-96"
     >
       <div>
         {/* <Image
@@ -28,7 +28,7 @@ export default function StoriesThatMatters() {
           className="w-full"
           alt="Saudat"
         />
-        <div className="grid gap-2.5 px-2.5 py-3">
+        <div className="grid gap-2.5 px-2.5 py-3 h-full">
           <p className="font-bold text-xl md:text-2xl">
             Bringing Books to the Streets The Journey of Our Campus Resource
             Drive
@@ -60,7 +60,7 @@ export default function StoriesThatMatters() {
           className="w-full"
           alt="Saudat"
         />
-        <div className="grid gap-2.5 px-2.5 py-3">
+        <div className="grid gap-2.5 px-2.5 py-3 h-full">
           <p className="font-bold text-xl md:text-2xl">
             What It's Like Volunteering at the ThriveRise Learning Center
           </p>
@@ -91,7 +91,7 @@ export default function StoriesThatMatters() {
           className="w-full"
           alt="Saudat"
         />
-        <div className="grid gap-2.5 px-2.5 py-3">
+        <div className="grid gap-2.5 px-2.5 py-3 h-full">
           <p className="font-bold text-xl md:text-2xl">
             Why Access to Education Still Isn&apos;t Equal — and What We&apos;re
             Doing About It
