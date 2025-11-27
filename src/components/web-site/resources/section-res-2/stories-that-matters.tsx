@@ -1,117 +1,75 @@
 "use client";
-import React from "react";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { Button, ButtonVariants, Icon, Icons } from "@/ui";
-import Link from "next/link";
 
-export default function StoriesThatMatters() {
+export default function StoriesGrid() {
+  const stories = [
+    {
+      id: 1,
+      title:
+        "Bringing Books to the Streets The Journey of Our Campus Resource Drive",
+      img: "/website-ui/resources-2.svg",
+    },
+    {
+      id: 2,
+      title: "What It's Like Learning at the ThriveRise Learning Center",
+      img: "/website-ui/resources-3.svg",
+    },
+    {
+      id: 3,
+      title:
+        "Why Access to Education Still Isn't Equal — and What We're Doing About It",
+      img: "/website-ui/resources-4.svg",
+    },
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 2, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
-      className="grid lg:grid-flow-col gap-3 lg:gap-10 items-center text-[#183668] [&>div]:border-2 [&>div]:border-[#183668] [&>div]:rounded-lg [&>div]:min-h-96"
+      className="w-full"
     >
-      <div>
-        {/* <Image
-          src={"/website-ui/thriverise-skills.svg"}
-          fill
-          sizes="1024px"
-          alt="Icon"
-        /> */}
-        <Image
-          src="/website-ui/resources-2.svg"
-          width={400}
-          height={400}
-          className="w-full"
-          alt="Saudat"
-        />
-        <div className="grid gap-2.5 px-2.5 py-3 h-full">
-          <p className="font-bold text-xl md:text-2xl">
-            Bringing Books to the Streets The Journey of Our Campus Resource
-            Drive
-          </p>
-          <div className="grid grid-cols-[1fr_auto]  items-center">
-            <Link href={""} className="md:text-lg">
-              Read more
-            </Link>
-            <div>
-              <Link href={""}>
-                <Button
-                  variant={ButtonVariants.YellowNoBgFilledRounded}
-                  className="cursor-pointer"
-                >
-                  <Icon type={Icons.ArrowRight} size={20} color="#183668" />
-                </Button>
-              </Link>
+      <div className="grid md:grid-cols-3 gap-8 px-4">
+        {stories.map((story) => (
+          <div
+            key={story.id}
+            className="grid gap-2 border-2 border-[#183668] rounded-lg pb-4 bg-white overflow-hidden text-[#183668]"
+          >
+            {/* Image */}
+            <div className="w-full h-[250px] relative">
+              <Image
+                src={story.img}
+                alt={story.title}
+                fill
+                className="object-cover"
+              />
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Image 2 */}
-      <div>
-        <Image
-          src="/website-ui/resources-3.svg"
-          width={400}
-          height={400}
-          className="w-full"
-          alt="Saudat"
-        />
-        <div className="grid gap-2.5 px-2.5 py-3 h-full">
-          <p className="font-bold text-xl md:text-2xl">
-            What It's Like Volunteering at the ThriveRise Learning Center
-          </p>
-          <div className="grid grid-cols-[1fr_auto]  items-center">
-            <Link href={""} className="md:text-lg">
-              Read more
-            </Link>
-            <div>
-              <Link href={""}>
-                <Button
-                  variant={ButtonVariants.YellowNoBgFilledRounded}
-                  className="cursor-pointer"
-                >
-                  <Icon type={Icons.ArrowRight} size={20} color="#183668" />
-                </Button>
-              </Link>
+            {/* Title */}
+            <div className="px-2 min-h-[100px]">
+              <h2 className="text-[22px] md:text-[26px] font-extrabold leading-tight">
+                {story.title}
+              </h2>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Image 3 */}
-      <div>
-        <Image
-          src="/website-ui/resources-4.svg"
-          width={400}
-          height={400}
-          className="w-full"
-          alt="Saudat"
-        />
-        <div className="grid gap-2.5 px-2.5 py-3 h-full">
-          <p className="font-bold text-xl md:text-2xl">
-            Why Access to Education Still Isn&apos;t Equal — and What We&apos;re
-            Doing About It
-          </p>
-          <div className="grid grid-cols-[1fr_auto]  items-center">
-            <Link href={""} className="md:text-lg">
-              Read more
-            </Link>
-            <div>
-              <Link href={""}>
-                <Button
-                  variant={ButtonVariants.YellowNoBgFilledRounded}
-                  className="cursor-pointer"
-                >
-                  <Icon type={Icons.ArrowRight} size={20} color="#183668" />
-                </Button>
-              </Link>
+            {/* Footer */}
+            <div className="px-4 flex items-center justify-between">
+              <p className="text-[16px] font-medium">Read more</p>
+
+              <Button
+                variant={ButtonVariants.YellowNoBgFilledRounded}
+                className=""
+              >
+                <Icon type={Icons.ArrowRight} size={20} color="#183668" />
+              </Button>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </motion.div>
   );
