@@ -8,3 +8,7 @@ export { Icons } from "./icons/types";
 
 // Logo
 export { Logo } from "./logo";
+
+// Inputs
+export { Input } from "./inputs";
+export { Inputs } from "./inputs/types";
