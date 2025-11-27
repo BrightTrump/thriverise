@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-export default function SectionGetInv1() {
+export default function SectionResources1() {
   return (
     <section className="py-10 sm:py-20 layout-spacing">
       <motion.div
@@ -14,20 +14,20 @@ export default function SectionGetInv1() {
       >
         <div className="grid gap-2.5 text-[#183668] pl-2">
           <h1 className="uppercase font-bold text-2xl md:text-4xl lg:text-5xl">
-            Join the ThriveRise Movement
+            Learn. Track. Stay Informed.
           </h1>
           <p className="">
-            At ThriveRise Africa, we believe that lasting change happens when
-            people come together. Whether you&apos;re passionate about teaching,
-            donating, mentoring, or supporting from afar, there&apos;s a place
-            for you here. Help us bridge education gaps, empower young people,
-            and create a future where no child is left behind.
+            Welcome to the ThriveRise Africa Resources Hub , your go-to space
+            for the latest updates, stories, data, and insights about our work
+            and the communities we serve. <br />
+            Stay inspired by our blog, explore our reports, and catch up on
+            press features and announcements.
           </p>
         </div>
 
         <span className="relative w-full aspect-[1/0.7] mx-auto">
           <Image
-            src={"/website-ui/thriverise-moment.svg"}
+            src={"/website-ui/resources.svg"}
             fill
             sizes="1024px"
             alt="Icon"

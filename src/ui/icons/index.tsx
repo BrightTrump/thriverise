@@ -1,3 +1,4 @@
+import ArrowRight from "./arrow-right";
 import Check from "./check";
 import ChevronDown from "./chevron-down";
 import ChevronLeft from "./chevron-left";
@@ -18,6 +19,9 @@ export function Icon({ type, color, size }: Props) {
   const props = { color, size };
 
   switch (type) {
+    case Icons.ArrowRight:
+      return <ArrowRight {...props} />;
+
     case Icons.Check:
       return <Check {...props} />;
 

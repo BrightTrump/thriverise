@@ -14,7 +14,7 @@ export default function SectionAbout1() {
         className="container mx-auto grid gap-5 items-center text-[#183668]"
       >
         <div className="grid gap-2.5">
-          <h1 className="text-6xl uppercase font-bold md:text-6xl">
+          <h1 className="text-5xl uppercase font-bold md:text-6xl">
             About ThriveRise Africa
           </h1>
           <p className="md:text-xl lg:max-w-4xl leading-relaxed">

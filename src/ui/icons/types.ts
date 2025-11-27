@@ -5,6 +5,7 @@ export interface IconProps {
 }
 
 export enum Icons {
+  ArrowRight = "arrow-right",
   Check = "check",
   ChevronDown = "chevron-down",
   ChevronLeft = "chevron-left",
