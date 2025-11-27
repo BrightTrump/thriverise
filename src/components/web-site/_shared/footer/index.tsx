@@ -1,13 +1,7 @@
 import React from "react";
-import { Icon, Icons, Logo } from "@/ui";
+import { Icon, Logo } from "@/ui";
 import Link from "next/link";
-
-const SOCIALS_SCHEMA = [
-  { icon: Icons.Instagram, url: "" },
-  { icon: Icons.Twitter, url: "" },
-  { icon: Icons.Facebook, url: "" },
-  { icon: Icons.Linkedin, url: "" },
-];
+import { SOCIALS_SCHEMA } from "@/constants/footer.constant";
 
 export default function Footer() {
   return (
@@ -32,20 +26,18 @@ export default function Footer() {
               </p>
             </div> */}
 
-            <div className="grid gap-3">
-              {/* Socials */}
-              <div className="grid grid-flow-col pt-2 pb-1 gap-4 w-max items-center">
-                {SOCIALS_SCHEMA.map((social, index) => (
-                  <Link
-                    key={index}
-                    href={social.url}
-                    target="_blank"
-                    className="w-7 h-7 rounded-full border border-[#183668] bg-[#01AED9] bg-opacity-15 grid place-content-center"
-                  >
-                    <Icon type={social.icon} size={16} color="#183668" />
-                  </Link>
-                ))}
-              </div>
+            {/* Socials */}
+            <div className="grid grid-flow-col pt-2 pb-1 gap-4 w-max items-center">
+              {SOCIALS_SCHEMA.map((social, index) => (
+                <Link
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  className="w-7 h-7 rounded-full border border-[#183668] bg-[#01AED9] bg-opacity-15 grid place-content-center"
+                >
+                  <Icon type={social.icon} size={16} color="#183668" />
+                </Link>
+              ))}
             </div>
           </div>
 
