@@ -1,12 +1,14 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx,css}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx,css}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx,css}",
-    "./src/ui/**/*.{js,ts,jsx,tsx,mdx,css}",
-  ],
+  // content: [
+  //   "./src/pages/**/*.{js,ts,jsx,tsx,mdx,css}",
+  //   "./src/components/**/*.{js,ts,jsx,tsx,mdx,css}",
+  //   "./src/app/**/*.{js,ts,jsx,tsx,mdx,css}",
+  //   "./src/ui/**/*.{js,ts,jsx,tsx,mdx,css}",
+  // ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx,css}"],
+
   theme: {
     extend: {
       colors: {
@@ -65,6 +67,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/line-clamp")],
+  plugins: [],
 };
 export default config;

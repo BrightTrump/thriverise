@@ -1,5 +1,5 @@
 @import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+@reference "tailwindcss/utilities";
 
 input::-ms-reveal,
 input::-ms-clear {
@@ -26,7 +26,8 @@ input[type="number"] {
 }
 
 .label {
-  @apply cursor-pointer text-[#252525] text-sm;
+  @apply cursor-pointer text-sm font-medium;
+  color: #252525;
 }
 
 .base-input {
@@ -42,20 +43,33 @@ input[type="number"] {
 }
 
 .base-input .preffix {
-  @apply col-[-1/1] row-[-1/1] justify-self-start p-3;
+  @apply justify-self-start p-3;
+  grid-column: -1 / 1;
+  grid-row: -1 / 1;
 }
 
 .base-input .suffix {
-  @apply col-[-1/1] row-[-1/1] justify-self-end pr-3;
+  @apply justify-self-end pr-3;
+  grid-column: -1 / 1;
+  grid-row: -1 / 1;
 }
 
 .base-input input,
 .base-input textarea {
-  @apply w-full bg-transparent text-sm font-medium p-2.5 col-[-1/1] row-[-1/1] border rounded-sm text-[#555555] border-[#DFDFDF] placeholder:text-[#8C8C8C] placeholder:text-sm outline-none transition-all;
+  @apply w-full bg-transparent text-sm font-medium p-2.5 border rounded-sm outline-none transition-all;
+  color: #555555;
+  border-color: #dfdfdf;
+}
+
+.base-input input::placeholder,
+.base-input textarea::placeholder {
+  color: #8c8c8c;
+  font-size: 0.875rem; /* text-sm */
 }
 
 .otp-input {
-  @apply border border-[#DFDFDF] w-12 h-12 text-xl rounded-md outline-none text-center;
+  @apply border w-12 h-12 text-xl rounded-md outline-none text-center;
+  border-color: #dfdfdf;
 }
 
 .input-scroll-bar::-webkit-scrollbar {
