@@ -13,10 +13,10 @@ export default function Page() {
       <SectionAbout1 />
       <SectionAbout2 />
       <SectionAbout3 />
-      <SectionAbout4 />
+      {/* <SectionAbout4 /> */}
       <JoinOurTeam />
       <SectionAbout6 />
-      <SectionAbout7 />
+      {/* <SectionAbout7 /> */}
       <SectionAbout8 />
     </main>
   );

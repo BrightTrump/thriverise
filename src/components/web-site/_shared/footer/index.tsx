@@ -46,7 +46,7 @@ export default function Footer() {
               <h3>About Thriverise</h3>
               <Link href={"/about-us"}>About Us</Link>
               <Link href={"#"}>Our Work</Link>
-              <Link href={"#"}>Our Impact</Link>
+              <Link href={"resources"}>Our Impact</Link>
             </div>
 
             <div>
