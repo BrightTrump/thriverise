@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navigation from "./navigation";
 import { Button, ButtonVariants, Logo } from "@/ui";
 import Link from "next/link";
@@ -7,6 +7,16 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const pathName = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleHeaderScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleHeaderScroll);
+    return () => window.removeEventListener("scroll,", handleHeaderScroll);
+  }, []);
 
   return (
     <header className="layout-spacing py-20 lg:py-5 z-20 sticky top-0 left-0 w-full bg-[#FFF8EB]">

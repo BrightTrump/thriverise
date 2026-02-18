@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Icon, Input, Inputs } from "@/ui";
 import Link from "next/link";
 import { SOCIALS_SCHEMA } from "@/constants/footer.constant";
+import { Icon, Input } from "@/ui";
+import { Inputs } from "@/ui/inputs/_types";
 
 export default function SectionContact1() {
   return (
@@ -81,11 +82,8 @@ export default function SectionContact1() {
           <div>
             <Input
               type={Inputs.Text}
-              id=""
               name=""
               placeholder="Enter custom terminology"
-              className="max-w-max"
-              defaultValue={() => {}}
             />
           </div>
         </div>

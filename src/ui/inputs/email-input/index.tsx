@@ -1,56 +1,41 @@
-"use client";
-
-import React, { useState } from "react";
-import { InputBaseProps } from "../types";
-import RequiredField from "../_shared/required-field";
+import type { EmailInputProps } from "./_types";
+import {
+  InputConStyles,
+  InputLabelStyles,
+  InputRequiredStyles,
+} from "../styles";
+import { cn } from "@/lib/utils";
 
 export function EmailInput({
   label,
-  onChange,
-  placeholder,
-  id,
   name,
-  required,
-  defaultValue,
+  value,
   readonly,
-  onInput,
-}: InputBaseProps) {
-  const [onInValid, setOnInvalid] = useState(false);
-
-  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onChange?.(e);
-    setOnInvalid(false);
-  };
-
-  const handleOnInvalid = () => {
-    setOnInvalid(true);
-  };
-
+  required,
+  placeholder,
+  onChange,
+}: EmailInputProps) {
   return (
-    <div className="grid gap-2 content-start">
-      <label htmlFor={id} className={`label`}>
-        {label} {required && "*"}
-      </label>
+    <div className="grid gap-2 content-start z-10">
+      {label && (
+        <label className={cn(InputLabelStyles)}>
+          {label}{" "}
+          {required && <span className={cn(InputRequiredStyles)}>*</span>}
+        </label>
+      )}
 
-      <div className={`base-input`}>
+      <div className={cn(InputConStyles)}>
         <input
-          id={id}
           type="email"
           name={name}
-          onChange={handleOnChange}
-          onInvalid={handleOnInvalid}
+          className="w-full bg-transparent outline-none text-black placeholder:text-[#BBBBBB]"
+          value={value}
           placeholder={placeholder}
-          required={required}
-          defaultValue={defaultValue}
           readOnly={readonly}
-          onInput={onInput}
+          onChange={onChange}
+          required={required}
         />
       </div>
-
-      {/* Required Field Message */}
-      {onInValid && (
-        <RequiredField label={label ? label : placeholder ? placeholder : ""} />
-      )}
     </div>
   );
 }
