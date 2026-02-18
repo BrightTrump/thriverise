@@ -7,7 +7,10 @@ import Link from "next/link";
 
 export default function SectionGetInv2() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing bg-[#01AED9]">
+    <section
+      id="volunteer-section"
+      className="py-10 sm:py-20 layout-spacing bg-[#01AED9]"
+    >
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -39,7 +42,7 @@ export default function SectionGetInv2() {
           <div>
             <Link
               href={
-                "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
+                "https://docs.google.com/forms/d/1pEjrGav1yRNVdfsIQvWyBx9JeeNtoqO_llAMyC34VaI/viewform"
               }
               target="_blank"
             >

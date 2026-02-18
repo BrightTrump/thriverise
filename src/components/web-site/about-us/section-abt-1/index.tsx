@@ -7,7 +7,7 @@ export default function SectionAbout1() {
   return (
     <section className="py-10 sm:py-20 layout-spacing">
       <motion.div
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}

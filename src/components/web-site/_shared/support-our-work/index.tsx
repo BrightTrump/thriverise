@@ -21,22 +21,12 @@ export default function SupportOurWork() {
           </p>
         </div>
         <div className="grid sm:grid-cols-[auto_1fr] gap-5 sm:gap-2 items-center">
-          <Link
-            href={
-              "https://docs.google.com/forms/d/1k52tfwcK-_ZZik_RgSZJm4IIIByB_Nj9fovUBTT-eGM/viewform"
-            }
-            target="_blank"
-          >
+          <Link href={"get-involved#donate-section"}>
             <Button variant={ButtonVariants.SkyBlueFilledRounded}>
               Donate Now
             </Button>
           </Link>
-          <Link
-            href={
-              "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
-            }
-            target="_blank"
-          >
+          <Link href={"get-involved#partner-section"}>
             <Button variant={ButtonVariants.SkyBlueFilledRounded}>
               Become A Partner
             </Button>

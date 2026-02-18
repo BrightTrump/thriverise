@@ -17,7 +17,7 @@ export default function WeBelieve() {
       </div>
 
       {/* Content */}
-      <div className="font-bold md:font-normal grid md:grid-flow-col gap-3 [&_span]:font-bold [&_span]:text-[80px] sm:[&_span]:text-8xl [&_span]:text-[#ffffff54] [&_p]:text-3xl md:[&_p]:text-4xl">
+      <div className="font-bold grid md:grid-flow-col gap-3 [&_span]:font-bold [&_span]:text-[80px] sm:[&_span]:text-8xl [&_span]:text-[#ffffff54] [&_p]:text-3xl md:[&_p]:text-4xl">
         <div>
           <span>01</span>
           <p>Everyone deserves a chance to learn.</p>

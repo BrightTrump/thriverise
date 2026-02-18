@@ -5,18 +5,29 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+@theme {
+  --color-primary: #003da6;
+  --color-secondary-blue: #005aff;
+  --color-black: #252525;
+  --color-blackgray: #697483;
+  --color-baseBgColor: #ffffff;
+  --color-lightWhite: #f7f8fa;
+  --color-baseBgOne: #003da6;
+  --color-borderColor: #e9e9e9;
+  --color-lightShadeBlue: #e6eeff;
+  --color-portalBg: #bd8f0b;
+  --color-portalBgDark: #8f6c08;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,7 +37,7 @@ body {
 }
 
 .layout-spacing {
-  @apply px-5 sm:px-10 ;
+  @apply px-5 sm:px-10;
 }
 
 .label {

@@ -22,7 +22,8 @@ export default function SectionAbout7() {
               Our financial statements and activity reports will be published
               annually and made available for public access, beginning from our
               first audited cycle. This includes:
-            </p>
+            </p>{" "}
+            <br />
             <p>First statement to be released by Jan 2026</p>
           </div>
         </div>
