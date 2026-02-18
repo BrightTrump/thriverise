@@ -20,7 +20,7 @@ export default function SectionResources3() {
             we&apos;re going.
           </p>
         </div>
-        <div className="grid gap-8 lg:gap-12">
+        <div id="reports-section" className="grid gap-8 lg:gap-12">
           <AnnualHighlights />
           <div className="mx-auto">
             <Link href={""}>

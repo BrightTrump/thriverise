@@ -34,7 +34,7 @@ export default function StoriesGrid() {
       viewport={{ once: true, amount: 0.2 }}
       className="w-full"
     >
-      <div className="grid md:grid-cols-3 gap-8 px-4">
+      <div id="blog-section" className="grid md:grid-cols-3 gap-8 px-4">
         {stories.map((story) => (
           <div
             key={story.id}

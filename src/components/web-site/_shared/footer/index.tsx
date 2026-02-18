@@ -66,10 +66,10 @@ export default function Footer() {
 
             <div>
               <h3>Resources</h3>
-              <Link href={"#"}>Blog</Link>
-              <Link href={"#"}>Reports</Link>
-              <Link href={"#"}>Press Releases</Link>
-              <Link href={"#"}>Media & Press</Link>
+              <Link href={"resources#blog-section"}>Blog</Link>
+              <Link href={"resources#reports-section"}>Reports</Link>
+              <Link href={"resources#reports-section"}>Press Releases</Link>
+              <Link href={"resources#reports-section"}>Media & Press</Link>
             </div>
           </nav>
         </div>
