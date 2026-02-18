@@ -68,8 +68,8 @@ export default function Footer() {
               <h3>Resources</h3>
               <Link href={"resources#blog-section"}>Blog</Link>
               <Link href={"resources#reports-section"}>Reports</Link>
-              <Link href={"resources#reports-section"}>Press Releases</Link>
-              <Link href={"resources#reports-section"}>Media & Press</Link>
+              <Link href={"resources#press-media-section"}>Press Releases</Link>
+              <Link href={"resources#press-media-section"}>Media & Press</Link>
             </div>
           </nav>
         </div>

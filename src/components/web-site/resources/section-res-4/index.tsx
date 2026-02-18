@@ -17,7 +17,7 @@ export default function SectionResources4() {
           </p>
         </div>
 
-        <div className="grid gap-8 lg:gap-12">
+        <div id="press-media-section" className="grid gap-8 lg:gap-12">
           <PressRelease />
           <div className="mx-auto">
             <Link href={""}>
