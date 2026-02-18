@@ -29,10 +29,10 @@ export default function Section4() {
             </div>
             <div>
               <Link
-                href={
-                  "https://docs.google.com/forms/d/1J0RqmPMn4Tek6jYBNRxef5WP4gUqGDGZanzDppYqDJ4/viewform"
-                }
-                target="_blank"
+                href={"campus-ambassador"}
+                // href={
+                //   "https://docs.google.com/forms/d/1J0RqmPMn4Tek6jYBNRxef5WP4gUqGDGZanzDppYqDJ4/viewform"
+                // }
               >
                 <Button variant={ButtonVariants.SkyBlueFilledRounded}>
                   Join as a Campus Ambassador
