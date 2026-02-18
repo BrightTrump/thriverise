@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button, ButtonVariants } from "@/ui";
+import Link from "next/link";
 
 export default function ThriveriseCommunity() {
   return (
@@ -34,9 +35,11 @@ export default function ThriveriseCommunity() {
           </p>
         </div>
         <div>
-          <Button variant={ButtonVariants.YellowFilledRounded}>
-            Learn More
-          </Button>
+          <Link href={"thriverise-community"}>
+            <Button variant={ButtonVariants.YellowFilledRounded}>
+              Learn More
+            </Button>
+          </Link>
         </div>
       </div>
     </motion.div>

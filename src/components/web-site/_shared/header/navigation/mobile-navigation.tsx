@@ -51,7 +51,7 @@ export default function MobileNavigation() {
           >
             <div className="grid gap-16 grid-flow-row content-start h-screen overflow-hidden">
               {/* Logo and Close button */}
-              <div className="px-5 pt-16">
+              <div className="px-5 pt-12">
                 <div className="container mx-auto grid grid-flow-col items-center justify-between">
                   <Logo variant="black" className="w-14 h-14" />
 
@@ -77,9 +77,9 @@ export default function MobileNavigation() {
                   <NavigationItem url="/resources" onClick={handleToggle}>
                     Resources
                   </NavigationItem>
-                  <NavigationItem url="/team" onClick={handleToggle}>
+                  {/* <NavigationItem url="/team" onClick={handleToggle}>
                     Team
-                  </NavigationItem>
+                  </NavigationItem> */}
                   <NavigationItem url="/get-involved" onClick={handleToggle}>
                     Get Involved
                   </NavigationItem>
@@ -92,7 +92,7 @@ export default function MobileNavigation() {
               {/* Call to actions */}
               <div className="px-5">
                 <div className="container mx-auto grid grid-flow-col gap-3">
-                  <Link href={"/join-us"}>
+                  <Link href={"get-involved#volunteer-section"}>
                     <Button
                       variant={ButtonVariants.CreamFilledRounded}
                       className="w-full"
@@ -100,7 +100,7 @@ export default function MobileNavigation() {
                       Join Us
                     </Button>
                   </Link>
-                  <Link href={"/donate"} target="_blank">
+                  <Link href={"get-involved#donate-section"}>
                     <Button
                       variant={ButtonVariants.SkyBlueFilledRounded}
                       className="w-full"
