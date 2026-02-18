@@ -6,7 +6,10 @@ import { Button, ButtonVariants, Icon, Icons } from "@/ui";
 import Link from "next/link";
 export default function SectionGetInv3() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing bg-[#183668]">
+    <section
+      id="donate-section"
+      className="py-10 sm:py-20 layout-spacing bg-[#183668]"
+    >
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -45,7 +48,7 @@ export default function SectionGetInv3() {
           <div>
             <Link
               href={
-                "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
+                "https://docs.google.com/forms/d/1k52tfwcK-_ZZik_RgSZJm4IIIByB_Nj9fovUBTT-eGM/viewform"
               }
               target="_blank"
             >

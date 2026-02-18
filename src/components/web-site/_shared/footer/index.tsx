@@ -45,36 +45,15 @@ export default function Footer() {
             <div>
               <h3>About Thriverise</h3>
               <Link href={"/about-us"}>About Us</Link>
-              <Link href={"/our-work"}>Our Work</Link>
-              <Link href={"/our-impact"}>Our Impact</Link>
+              <Link href={"#"}>Our Work</Link>
+              <Link href={"#"}>Our Impact</Link>
             </div>
 
             <div>
               <h3>Get Involved</h3>
-              <Link
-                href={
-                  "https://docs.google.com/forms/d/1pEjrGav1yRNVdfsIQvWyBx9JeeNtoqO_llAMyC34VaI/viewform"
-                }
-                target="_blank"
-              >
-                Volunteer
-              </Link>
-              <Link
-                href={
-                  "https://docs.google.com/forms/d/1k52tfwcK-_ZZik_RgSZJm4IIIByB_Nj9fovUBTT-eGM/viewform"
-                }
-                target="_blank"
-              >
-                Donate
-              </Link>
-              <Link
-                href={
-                  "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
-                }
-                target="_blank"
-              >
-                Partner With Us
-              </Link>
+              <Link href={"get-involved#volunteer-section"}>Volunteer</Link>
+              <Link href={"get-involved#donate-section"}>Donate</Link>
+              <Link href={"get-involved#partner-section"}>Partner With Us</Link>
               <Link
                 href={
                   "https://docs.google.com/forms/d/1J0RqmPMn4Tek6jYBNRxef5WP4gUqGDGZanzDppYqDJ4/viewform"
@@ -87,10 +66,10 @@ export default function Footer() {
 
             <div>
               <h3>Resources</h3>
-              <Link href={"/coming-soon"}>Blog</Link>
-              <Link href={"/coming-soon"}>Reports</Link>
-              <Link href={"/coming-soon"}>Press Releases</Link>
-              <Link href={"/coming-soon"}>Media & Press</Link>
+              <Link href={"#"}>Blog</Link>
+              <Link href={"#"}>Reports</Link>
+              <Link href={"#"}>Press Releases</Link>
+              <Link href={"#"}>Media & Press</Link>
             </div>
           </nav>
         </div>

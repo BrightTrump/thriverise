@@ -31,22 +31,14 @@ export default function Header() {
 
         <div className="hidden lg:grid grid-flow-col gap-2.5">
           <Link
-            href={
-              "https://docs.google.com/forms/d/1pEjrGav1yRNVdfsIQvWyBx9JeeNtoqO_llAMyC34VaI/viewform"
-            }
-            target="_blank"
+            href={"get-involved#volunteer-section"}
             className="lg:hidden xl:block"
           >
             <Button className="" variant={ButtonVariants.CreamFilledRounded}>
               Join Us
             </Button>
           </Link>
-          <Link
-            href={
-              "https://docs.google.com/forms/d/1k52tfwcK-_ZZik_RgSZJm4IIIByB_Nj9fovUBTT-eGM/viewform"
-            }
-            target="_blank"
-          >
+          <Link href={"get-involved#donate-section"}>
             <Button variant={ButtonVariants.SkyBlueFilledRounded}>
               Donate Now
             </Button>

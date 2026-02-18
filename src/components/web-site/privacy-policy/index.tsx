@@ -58,9 +58,7 @@ export default function PrivacyPolicy() {
               </p>
             </div>
             <p>
-              We only collect personal information (such as name, email, phone)
-              when you provide it, through contact forms, donations, or
-              sign-ups.
+              For privacy-related requests, email: thriveriseafrica@gmail.com
             </p>
           </div>
         </div>

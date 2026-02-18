@@ -7,7 +7,10 @@ import Link from "next/link";
 
 export default function SectionGetInv4() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing bg-[#FDB813]">
+    <section
+      id="partner-section"
+      className="py-10 sm:py-20 layout-spacing bg-[#FDB813]"
+    >
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
