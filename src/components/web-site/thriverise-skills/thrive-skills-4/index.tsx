@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import HowItWorks from "./how-it-works";
 import Image from "next/image";
 
-export default function ThriveLibrary4() {
+export default function ThriveSkills4() {
   return (
     <section className="py-10 sm:py-20 md:py-24 layout-spacing">
       <motion.div
