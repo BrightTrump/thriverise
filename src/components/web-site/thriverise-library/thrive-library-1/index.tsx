@@ -14,7 +14,7 @@ export default function ThriveLibrary1() {
         viewport={{ once: true, amount: 0.2 }}
         className="container mx-auto grid lg:grid-cols-2 gap-3 items-center text-[#183668]"
       >
-        <div className="grid">
+        <div className="grid gap-7">
           <div className="grid gap-2.5 text-[#183668] pl-2 [&>h1]:uppercase [&>h1]:font-bold [&>h1]:text-5xl [&>h1]:lg:text-[45px] [&>h1]:2xl:text-[58px]">
             <h1 className="">Breaking Barriers to Knowledge</h1>
             <p className="">
@@ -23,14 +23,24 @@ export default function ThriveLibrary1() {
             </p>
           </div>
           <div className="grid sm:grid-cols-[auto_1fr] gap-5 sm:gap-2 items-center">
-            <Link href={"get-involved#volunteer-section"}>
+            <Link
+              href={
+                "https://docs.google.com/forms/d/e/1FAIpQLSePx3k6-oCZ2uo6w9r1oh2zxq9sD_oWBXq_4hzxlkHgRfeqeg/viewform"
+              }
+              target="_blank"
+            >
               <Button variant={ButtonVariants.SkyBlueFilledRounded}>
-                Volunteer
+                Request Resources
               </Button>
             </Link>
-            <Link href={"get-involved#donate-section"}>
+            <Link
+              href={
+                "https://docs.google.com/forms/d/1UBYb_oTB21N8etqDTqS1CbWJx5gpBnQcUMSELpzvsuw/viewform"
+              }
+              target="_blank"
+            >
               <Button variant={ButtonVariants.SkyBlueFilledRounded}>
-                Donate
+                Donate Materials
               </Button>
             </Link>
           </div>
@@ -38,7 +48,7 @@ export default function ThriveLibrary1() {
 
         <span className="relative w-full aspect-[1/0.7] mx-auto">
           <Image
-            src={"/website-ui/thriverise-community.svg"}
+            src={"/website-ui/thriverise-library.svg"}
             fill
             sizes="1024px"
             alt="Icon"

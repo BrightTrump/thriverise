@@ -6,10 +6,9 @@ export default function ThriveLibrary2() {
     <section className="py-10 sm:py-20 layout-spacing">
       <div className="container mx-auto text-[#183668]">
         <p className="font-semibold text-2xl md:text-[40px] uppercase">
-          Education is the foundation of opportunity, yet millions of children
-          in Nigeria remain out of school due to poverty, limited access, or
-          social barriers. At ThriveRise, we believe every child deserves a fair
-          chance to learn, grow, and thrive.
+          University students across Africa often struggle to access the
+          academic materials they need to succeed. Textbooks, research papers,
+          and scholarly tools are either too expensive or simply out of reach.
         </p>
       </div>
     </section>
