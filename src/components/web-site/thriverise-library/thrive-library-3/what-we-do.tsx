@@ -15,30 +15,34 @@ export default function WhatWeDo() {
           What We Do
         </h1>
         <p>
-          The ThriveRise Community Learning Centers bring education directly to
-          underserved neighborhoods by offering:
+          The ThriveRise Library is our digital access initiative designed to
+          close this gap. Through the Library, students can:
         </p>
       </div>
 
       {/* Content */}
-      <div className="max-w-6xl mx-auto font-bold grid md:grid-cols-2 gap-11 [&>div]:grid md:[&>div]:place-items-center md:[&>div]:mx-auto [&_span]:font-bold [&_span]:text-[80px] sm:[&_span]:text-8xl [&_span]:text-[#ffffff54] [&_p]:text-3xl md:[&_p]:text-4xl md:[&_p]:text-center ">
+      <div className="font-bold grid md:grid-cols-2 gap-11 [&>div]:grid md:[&>div]:place-items-center md:[&>div]:mx-auto [&_span]:font-bold [&_span]:text-[80px] sm:[&_span]:text-8xl [&_span]:text-[#ffffff54] [&_p]:text-3xl md:[&_p]:text-4xl md:[&_p]:text-center ">
         <div>
           <span>01</span>
-          <p>Free Basic Education for out-of-school children.</p>
+          <p>Request Free Academic Resources tailored to their needs</p>
         </div>
         <div>
           <span>02</span>
-          <p>
-            Safe Learning Spaces supported by volunteer teachers and mentors.
-          </p>
+          <p>Host Helpful Events & Webinars to help students across Africa</p>
         </div>
         <div>
           <span>03</span>
-          <p>Small efforts lead to big change.</p>
+          <p>
+            Build a Culture of Knowledge Sharing by contributing useful
+            materials.
+          </p>
         </div>
         <div>
           <span>04</span>
-          <p>Small efforts lead to big change.</p>
+          <p>
+            Access Donated Study Materials and Research Tools sourced by our
+            team and partners.
+          </p>
         </div>
       </div>
     </motion.div>

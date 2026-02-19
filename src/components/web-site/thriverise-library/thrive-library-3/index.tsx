@@ -4,7 +4,7 @@ import WhyItMatters from "./why-it-matters";
 
 export default function ThriveLibrary3() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing bg-[#279B48]">
+    <section className="py-10 sm:py-20 layout-spacing bg-[#183668]">
       <div className="container mx-auto grid gap-14 lg:gap-48">
         <WhyItMatters />
         <WhatWeDo />

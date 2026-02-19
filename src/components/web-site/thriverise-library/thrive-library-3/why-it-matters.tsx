@@ -16,15 +16,14 @@ export default function WhyItMatters() {
           Why It Matters
         </h1>
         <p className="">
-          Without access to education, children face a higher risk of poverty,
-          unemployment, and social exclusion. Community-based education
-          initiatives provide an immediate and sustainable solution to close
-          this gap.
+          Lack of access to educational resources is a major barrier to success
+          in higher education. Students are forced to rely on outdated or
+          incomplete materials, limiting their potential.
         </p>
       </div>
       <span className="relative w-full aspect-[1/0.7] mx-auto">
         <Image
-          src={"/website-ui/thriverise-community-2.svg"}
+          src={"/website-ui/thrive-library.svg"}
           fill
           sizes="1024px"
           alt="Icon"
