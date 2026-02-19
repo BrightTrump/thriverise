@@ -23,7 +23,7 @@ export default function PressRelease() {
       id: 3,
       title:
         "ThriveRise Recognized Among Top Youth-Driven NGOs to Watch in 2025",
-      img: "/website-ui/resources-6.svg",
+      img: "/website-ui/resources-7.svg",
       link: "",
     },
   ];
@@ -60,14 +60,17 @@ export default function PressRelease() {
             </div>
 
             {/* Footer */}
-            <div className="px-4 flex items-center justify-between pt-4">
+            <Link
+              href={story.link}
+              target="_blank"
+              className="px-4 flex items-center justify-between pt-4"
+            >
               <p className="text-[16px] font-medium">Read more</p>
-              <Link href={""}>
-                <Button variant={ButtonVariants.YellowNoBgFilledRounded}>
-                  <Icon type={Icons.ArrowRight} size={20} color="#183668" />
-                </Button>
-              </Link>
-            </div>
+
+              <Button variant={ButtonVariants.YellowNoBgFilledRounded}>
+                <Icon type={Icons.ArrowRight} size={20} color="#183668" />
+              </Button>
+            </Link>
           </div>
         ))}
       </div>
