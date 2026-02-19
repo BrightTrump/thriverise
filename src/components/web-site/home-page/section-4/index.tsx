@@ -6,16 +6,16 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Section4() {
   return (
-    <section className="container 2xl:mx-auto lg:max-w-6xl py-10 sm:py-20 ml-7 sm:ml-auto bg-[#FDB813] rounded-bl-[60px] md:rounded-bl-[100px]">
+    <motion.section
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 2, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="container 2xl:mx-auto lg:max-w-6xl py-10 sm:py-20 ml-7 sm:ml-auto bg-[#FDB813] rounded-bl-[60px] md:rounded-bl-[100px]"
+    >
       {/* Content */}
-      <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.2 }}
-        className=""
-      >
-        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 py-8 lg:py-20 items-center text-[#183668]">
+      <div className="">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center text-[#183668]">
           <div className="grid gap-5 lg:gap-8 text-[#183668] order-2 lg:order-none pl-5">
             <div className="grid gap-2.5">
               <h1 className="uppercase font-bold text-2xl md:text-4xl">
@@ -48,7 +48,7 @@ export default function Section4() {
               alt="Icon"
             />
           </span> */}
-          <div className="relative w-full aspect-[1/0.8] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full mx-auto order-1 lg:order-none">
+          <div className="relative w-full aspect-[1/0.8] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full order-1 lg:order-none">
             <Image
               src="/website-ui/campus-ambassador.svg"
               fill
@@ -68,7 +68,7 @@ export default function Section4() {
             />
           </span> */}
         </div>
-      </motion.div>
-    </section>
+      </div>
+    </motion.section>
   );
 }
