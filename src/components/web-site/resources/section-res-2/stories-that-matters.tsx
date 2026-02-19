@@ -12,17 +12,20 @@ export default function StoriesGrid() {
       title:
         "Bringing Books to the Streets The Journey of Our Campus Resource Drive",
       img: "/website-ui/resources-2.svg",
+      link: "https://www.linkedin.com/posts/thriverise_activity-7430201789267726336-dt-E?utm_source=share&utm_medium=member_ios&rcm=ACoAADbnGKsBvDZDsJvjlNoAEfX7dyr0fPiPl6I",
     },
     {
       id: 2,
       title: "What It's Like Learning at the ThriveRise Learning Center",
       img: "/website-ui/resources-3.svg",
+      link: "https://www.linkedin.com/posts/thriverise_activity-7430192683979161600-ArFI?utm_source=share&utm_medium=member_ios&rcm=ACoAADbnGKsBvDZDsJvjlNoAEfX7dyr0fPiPl6I",
     },
     {
       id: 3,
       title:
         "Why Access to Education Still Isn't Equal — and What We're Doing About It",
       img: "/website-ui/resources-4.svg",
+      link: "https://www.linkedin.com/posts/thriverise_activity-7430185154918146048-yIgy?utm_source=share&utm_medium=member_ios&rcm=ACoAADbnGKsBvDZDsJvjlNoAEfX7dyr0fPiPl6I",
     },
   ];
 

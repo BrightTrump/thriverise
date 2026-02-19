@@ -11,17 +11,20 @@ export default function PressRelease() {
       id: 1,
       title: "ThriveRise Launches Community Learning Center in Tanke, Ilorin",
       img: "/website-ui/resources-5.svg",
+      link: "https://www.linkedin.com/posts/boluwatifemercyadeleke_yesterday-on-behalf-of-thriverise-i-paid-activity-7369315972509286402-6fOZ?utm_source=share&utm_medium=member_ios&rcm=ACoAADbnGKsBvDZDsJvjlNoAEfX7dyr0fPiPl6I",
     },
     {
       id: 2,
       title: "Partnership Announced with [Partner Name]",
       img: "/website-ui/resources-6.svg",
+      link: "https://www.linkedin.com/posts/thriverise_we-are-thrilled-to-announce-our-partnership-activity-7369345076935692290-2CgL?utm_source=share&utm_medium=member_ios&rcm=ACoAADbnGKsBvDZDsJvjlNoAEfX7dyr0fPiPl6I",
     },
     {
       id: 3,
       title:
         "ThriveRise Recognized Among Top Youth-Driven NGOs to Watch in 2025",
-      img: "/website-ui/resources-7.svg",
+      img: "/website-ui/resources-6.svg",
+      link: "",
     },
   ];
 
