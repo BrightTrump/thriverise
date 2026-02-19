@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import OurPartners from "./our-partners";
+import HowItWorks from "./how-it-works";
 
 export default function ThriveLibrary4() {
   return (
@@ -14,18 +14,22 @@ export default function ThriveLibrary4() {
         viewport={{ once: true, amount: 0.2 }}
         className="container mx-auto grid gap-12 lg:gap-16 items-center place-items-center"
       >
-        <div className="max-w-3xl text-[#183668] text-center">
-          <h1 className="uppercase font-bold text-center text-4xl md:text-6xl">
-            Impact
-          </h1>
-          <p>
-            By giving children a second chance at education, we&apos;re not only
-            transforming individual lives but also strengthening families and
-            communities for generations to come.
-          </p>
+        <div className="">
+          <div className="max-w-3xl text-[#183668] text-center">
+            <h1 className="uppercase font-bold text-center text-4xl md:text-6xl">
+              Our Partners
+            </h1>
+            <p>
+              We work with organizations like DeSciNG to source and share
+              high-quality educational resources. While we fulfill requests
+              directly, students can also explore partner resource hubs for
+              additional support.
+            </p>
+          </div>
+          <div></div>
         </div>
 
-        <OurPartners />
+        <HowItWorks />
       </motion.div>
     </section>
   );
