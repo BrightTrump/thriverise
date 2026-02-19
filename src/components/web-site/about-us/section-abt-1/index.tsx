@@ -41,7 +41,7 @@ export default function SectionAbout1() {
           {/* Right Image */}
           <div className="relative w-full aspect-[4/3]">
             <Image
-              src="/website-ui/about-hero-2.svg"
+              src="/website-ui/thriverise-community.svg"
               alt="Children learning"
               fill
               className="object-contain"

@@ -11,17 +11,21 @@ export default function PressRelease() {
       id: 1,
       title: "ThriveRise Launches Community Learning Center in Tanke, Ilorin",
       img: "/website-ui/resources-5.svg",
+      link: "https://www.linkedin.com/posts/boluwatifemercyadeleke_yesterday-on-behalf-of-thriverise-i-paid-activity-7369315972509286402-6fOZ?utm_source=share&utm_medium=member_ios&rcm=ACoAADbnGKsBvDZDsJvjlNoAEfX7dyr0fPiPl6I",
     },
     {
       id: 2,
-      title: "Partnership Announced with [Partner Name]",
+      title:
+        "Partnership Announced with Kwara State Ministry of Education and Human Capital Development",
       img: "/website-ui/resources-6.svg",
+      link: "https://www.linkedin.com/posts/thriverise_we-are-thrilled-to-announce-our-partnership-activity-7369345076935692290-2CgL?utm_source=share&utm_medium=member_ios&rcm=ACoAADbnGKsBvDZDsJvjlNoAEfX7dyr0fPiPl6I",
     },
     {
       id: 3,
       title:
         "ThriveRise Recognized Among Top Youth-Driven NGOs to Watch in 2025",
       img: "/website-ui/resources-7.svg",
+      link: "",
     },
   ];
 
@@ -57,14 +61,17 @@ export default function PressRelease() {
             </div>
 
             {/* Footer */}
-            <div className="px-4 flex items-center justify-between pt-4">
+            <Link
+              href={story.link}
+              target="_blank"
+              className="px-4 flex items-center justify-between pt-4"
+            >
               <p className="text-[16px] font-medium">Read more</p>
-              <Link href={""}>
-                <Button variant={ButtonVariants.YellowNoBgFilledRounded}>
-                  <Icon type={Icons.ArrowRight} size={20} color="#183668" />
-                </Button>
-              </Link>
-            </div>
+
+              <Button variant={ButtonVariants.YellowNoBgFilledRounded}>
+                <Icon type={Icons.ArrowRight} size={20} color="#183668" />
+              </Button>
+            </Link>
           </div>
         ))}
       </div>
