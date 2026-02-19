@@ -8,7 +8,7 @@ export default function WeBelieve() {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 2, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
-      className="grid gap-8 text-[#FFF8EB]"
+      className="grid gap-8 md:gap-14 text-[#FFF8EB]"
     >
       <div className="text-center">
         <h1 className="uppercase font-bold text-center text-4xl lg:text-6xl">
