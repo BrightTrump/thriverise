@@ -15,7 +15,8 @@ export default function PressRelease() {
     },
     {
       id: 2,
-      title: "Partnership Announced with [Partner Name]",
+      title:
+        "Partnership Announced with Kwara State Ministry of Education and Human Capital Development",
       img: "/website-ui/resources-6.svg",
       link: "https://www.linkedin.com/posts/thriverise_we-are-thrilled-to-announce-our-partnership-activity-7369345076935692290-2CgL?utm_source=share&utm_medium=member_ios&rcm=ACoAADbnGKsBvDZDsJvjlNoAEfX7dyr0fPiPl6I",
     },
