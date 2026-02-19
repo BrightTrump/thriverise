@@ -25,12 +25,7 @@ export default function ThriveriseLibrary() {
           </p>
         </div>
         <div>
-          <Link
-            href={
-              "https://docs.google.com/forms/d/1sW2dBYzZLoQ3YcFKpMlNHpdIkhPhRO1JSa0cBS7V8tc/viewform"
-            }
-            target="_blank"
-          >
+          <Link href={"thriverise-library"}>
             <Button variant={ButtonVariants.SkyBlueFilledRounded}>
               Request Resources
             </Button>

@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import OurPartners from "./our-partners";
 
-export default function SectionThrive4() {
+export default function ThriveLibrary4() {
   return (
     <section className="py-10 sm:py-20 md:py-24 layout-spacing">
       <motion.div

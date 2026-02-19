@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import React from "react";
 
-export default function SectionThrive5() {
+export default function ThriveLibrary5() {
   return (
     <section className="py-10 sm:py-20 layout-spacing grid gap-24 items-center">
       <div className="container mx-auto max-w-6xl px-12 grid gap-8 bg-[#183668] rounded-4xl py-16">
