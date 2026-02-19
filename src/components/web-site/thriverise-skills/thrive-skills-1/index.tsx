@@ -16,39 +16,23 @@ export default function ThriveSkills1() {
       >
         <div className="grid gap-7">
           <div className="grid gap-2.5 text-[#183668] pl-2 [&>h1]:uppercase [&>h1]:font-bold [&>h1]:text-5xl [&>h1]:lg:text-[45px] [&>h1]:2xl:text-[58px]">
-            <h1 className="">Breaking Barriers to Knowledge</h1>
+            <h1 className="">Skills for Decent Work and Entrepreneurship</h1>
             <p className="">
-              A digital library where African students can request and access
-              free academic resources.
+              Equipping African youth with practical skills to thrive in today’s
+              economy.
             </p>
           </div>
-          <div className="grid sm:grid-cols-[auto_1fr] gap-5 sm:gap-2 items-center">
-            <Link
-              href={
-                "https://docs.google.com/forms/d/e/1FAIpQLSePx3k6-oCZ2uo6w9r1oh2zxq9sD_oWBXq_4hzxlkHgRfeqeg/viewform"
-              }
-              target="_blank"
-            >
-              <Button variant={ButtonVariants.SkyBlueFilledRounded}>
-                Request Resources
-              </Button>
-            </Link>
-            <Link
-              href={
-                "https://docs.google.com/forms/d/1UBYb_oTB21N8etqDTqS1CbWJx5gpBnQcUMSELpzvsuw/viewform"
-              }
-              target="_blank"
-            >
-              <Button variant={ButtonVariants.SkyBlueFilledRounded}>
-                Donate Materials
-              </Button>
-            </Link>
-          </div>
+
+          <Link href={"get-involved#partner-section"}>
+            <Button variant={ButtonVariants.SkyBlueFilledRounded}>
+              Partner With Us
+            </Button>
+          </Link>
         </div>
 
         <span className="relative w-full aspect-[1/0.7] mx-auto">
           <Image
-            src={"/website-ui/thriverise-library.svg"}
+            src={"/website-ui/thriverise-skills-2.svg"}
             fill
             sizes="1024px"
             alt="Icon"

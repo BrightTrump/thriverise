@@ -34,12 +34,7 @@ export default function ThriveriseSkills() {
           </p>
         </div>
         <div>
-          <Link
-            href={
-              "https://docs.google.com/forms/d/1jUh68bTubd-SKx_iU__CB-6V4OAHhAjuKwiJdlaCpJI/viewform"
-            }
-            target="_blank"
-          >
+          <Link href={"thriverise-skills"}>
             <Button variant={ButtonVariants.GreenFilledRounded}>
               Partner With Us
             </Button>
