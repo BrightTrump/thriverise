@@ -19,7 +19,7 @@ export default function CampusSection6() {
 
         <Link
           href={
-            "https://docs.google.com/forms/d/e/1FAIpQLSePx3k6-oCZ2uo6w9r1oh2zxq9sD_oWBXq_4hzxlkHgRfeqeg/viewform"
+            ""
           }
           target="_blank"
         >
