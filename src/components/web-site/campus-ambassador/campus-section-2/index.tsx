@@ -6,10 +6,11 @@ export default function CampusSection2() {
     <section className="py-10 sm:py-20 layout-spacing">
       <div className="container mx-auto text-[#183668]">
         <p className="font-semibold text-2xl md:text-[40px] uppercase">
-          Education is the foundation of opportunity, yet millions of children
-          in Nigeria remain out of school due to poverty, limited access, or
-          social barriers. At ThriveRise, we believe every child deserves a fair
-          chance to learn, grow, and thrive.
+          Join the ThriveRise Campus Ambassadors Program and become a voice for
+          change in your university. As an ambassador, you&apos;ll represent
+          ThriveRise Africa on your campus, inspire your peers, and help us
+          spread our mission of driving access to education and skills
+          development for young people.
         </p>
       </div>
     </section>

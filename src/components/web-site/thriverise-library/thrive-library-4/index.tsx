@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import HowItWorks from "./how-it-works";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ThriveLibrary4() {
   return (
@@ -28,13 +29,15 @@ export default function ThriveLibrary4() {
             </p>
           </div>
           <span className="relative mx-auto">
-            <Image
-              src="/website-ui/thrive-library-2.svg"
-              alt="Icon"
-              width={324}
-              height={80}
-              className="mx-auto"
-            />
+            <Link href={"https://nubianresearch.com/"} target="_blank">
+              <Image
+                src="/website-ui/thrive-library-2.svg"
+                alt="Icon"
+                width={324}
+                height={80}
+                className="mx-auto"
+              />
+            </Link>
           </span>
         </div>
 
