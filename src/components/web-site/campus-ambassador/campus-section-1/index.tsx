@@ -23,7 +23,7 @@ export default function CampusSection1() {
 
         <span className="relative w-full aspect-[1/0.7] mx-auto">
           <Image
-            src={"/website-ui/thriverise-community.svg"}
+            src={"/website-ui/campus-ambassador-2.svg"}
             fill
             sizes="1024px"
             alt="Icon"
