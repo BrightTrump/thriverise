@@ -7,7 +7,7 @@ export default function CampusSection5() {
   return (
     <section className="py-10 sm:py-20 layout-spacing text-[#183668]">
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
@@ -71,7 +71,7 @@ export default function CampusSection5() {
         </div>
         <span className="relative w-full aspect-[1/0.7] mx-auto">
           <Image
-            src={"/website-ui/campus-ambassador-3.svg"}
+            src={"/website-ui/campus-ambassador-5.svg"}
             fill
             sizes="1024px"
             alt="Icon"
