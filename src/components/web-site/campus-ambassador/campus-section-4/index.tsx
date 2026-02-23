@@ -29,11 +29,11 @@ export default function CampusSection4() {
 
           <ul className="space-y-3">
             {[
-              "Advocate for quality education (SDG 4) and decent work (SDG 8) among your peers.",
-              "Help organize and promote ThriveRise events, workshops, and webinars on your campus.",
-              "Serve as a link between students and ThriveRise, sharing resources like our Library, Tech Skills Initiative, and Academy.",
-              "Build a community of students passionate about social impact, innovation, and leadership.",
-              "Support outreach and awareness campaigns both online and offline.",
+              "Represent ThriveRise Africa in your school.",
+              "Spread awareness about our programs and opportunities.",
+              "Connect with fellow student leaders and drive collaborations.",
+              "Share feedback, ideas, and stories from your campus community.",
+              "Take part in monthly challenges and campaigns.",
             ].map((text, index) => (
               <li
                 key={index}
