@@ -5,7 +5,7 @@ import ThriveriseSkills from "./thriverise-skills";
 
 export default function Section1() {
   return (
-    <section className="py-10 sm:py-20 layout-spacing">
+    <section id="our-work" className="py-10 sm:py-20 layout-spacing">
       <div className="container mx-auto grid gap-12 lg:gap-16 items-center place-items-center">
         <div className="text-[#183668]">
           <h1 className="uppercase font-bold text-center text-3xl">
