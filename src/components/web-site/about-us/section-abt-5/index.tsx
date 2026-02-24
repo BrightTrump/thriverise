@@ -14,7 +14,7 @@ export default function JoinOurTeam() {
         <div className="">
           <Link
             href={
-              "https://docs.google.com/forms/d/1k52tfwcK-_ZZik_RgSZJm4IIIByB_Nj9fovUBTT-eGM/viewform"
+              "https://docs.google.com/forms/d/e/1FAIpQLSdHyYY28l0mnMYUWv7YZuylt2OCllPO1Z_YjUfZitcF6WN4Ng/viewform"
             }
             target="_blank"
           >

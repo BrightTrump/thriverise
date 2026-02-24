@@ -13,11 +13,11 @@ export default function CampusSection6() {
           </h1>
           <p>
             If you&apos;re ready to inspire and empower your campus community,
-            we’d love to have you join us!
+            we&apos;d love to have you join us!
           </p>
         </div>
 
-        <Link href={""} target="_blank">
+        <Link href={"https://forms.gle/6y5a2jer3ExPeXNf7"} target="_blank">
           <Button variant={ButtonVariants.SkyBlueFilledRounded}>
             Become a Campus Ambassador
           </Button>

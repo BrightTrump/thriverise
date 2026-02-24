@@ -45,7 +45,7 @@ export default function Footer() {
             <div>
               <h3>About Thriverise</h3>
               <Link href={"/about-us"}>About Us</Link>
-              <Link href={"#"}>Our Work</Link>
+              <Link href={"#our-work"}>Our Work</Link>
               <Link href={"resources"}>Our Impact</Link>
             </div>
 
@@ -54,14 +54,7 @@ export default function Footer() {
               <Link href={"get-involved#volunteer-section"}>Volunteer</Link>
               <Link href={"get-involved#donate-section"}>Donate</Link>
               <Link href={"get-involved#partner-section"}>Partner With Us</Link>
-              <Link
-                href={
-                  "https://docs.google.com/forms/d/1J0RqmPMn4Tek6jYBNRxef5WP4gUqGDGZanzDppYqDJ4/viewform"
-                }
-                target="_blank"
-              >
-                Campus Ambassador Program
-              </Link>
+              <Link href={"campus-ambassador"}>Campus Ambassador Program</Link>
             </div>
 
             <div>
