@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { SOCIALS_SCHEMA } from "@/constants/footer.constant";
-import { Icon, Input } from "@/ui";
+import { Button, ButtonVariants, Icon, Input } from "@/ui";
 import { Inputs } from "@/ui/inputs/_types";
 
 export default function SectionContact1() {
@@ -70,8 +69,8 @@ export default function SectionContact1() {
         </div>
 
         {/* Message Information */}
-        <div className="bg-[#01AED9] rounded-xl [&_h2]:text-4xl [&_h2]:font-bold [&_h2]:md:text-[40px] px-5 py-8">
-          <div className="grid gap-5">
+        <div className="bg-[#01AED9] rounded-xl [&_h2]:text-4xl [&_h2]:font-bold [&_h2]:md:text-5xl px-5 py-8">
+          <div className="grid gap-2.5 md:gap-5 pb-5 md:pb-10">
             <h2>Send Us a Message</h2>
             <p>
               Have a message or request? Fill out our quick contact form and
@@ -79,12 +78,21 @@ export default function SectionContact1() {
             </p>
           </div>
 
-          <div>
-            <Input
-              type={Inputs.Text}
-              name=""
-              placeholder="Enter custom terminology"
-            />
+          <div className="grid gap-7">
+            <div className="grid gap-2.5">
+              <Input type={Inputs.Text} label="Name" name="" />
+              <Input type={Inputs.Email} label="Email" name="" />
+              <Input type={Inputs.Text} label="Subject" name="" />
+              <Input type={Inputs.Textarea} label="Message" name="" />
+            </div>
+            <div className="">
+              <Button
+                variant={ButtonVariants.SkyBlueFilledRounded}
+                className="w-full"
+              >
+                Submit
+              </Button>
+            </div>
           </div>
         </div>
       </motion.div>

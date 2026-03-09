@@ -10,7 +10,6 @@ export default function JoinOurTeam() {
         <h1 className="uppercase font-bold text-[40px] md:text-6xl text-white text-center">
           Join Our Team
         </h1>
-
         <div className="">
           <Link
             href={
