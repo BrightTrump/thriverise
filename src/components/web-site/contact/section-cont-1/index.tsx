@@ -13,9 +13,9 @@ export default function SectionContact1() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
-        className="container mx-auto grid lg:grid-cols-2 gap-12 text-[#183668] order-2 lg:order-none pl-5 md:pl-0"
+        className="container mx-auto grid lg:grid-cols-2 gap-12 text-[#183668] order-2 lg:order-0 pl-5 md:pl-0"
       >
-        <div className="grid gap-12 md:gap-[60px]">
+        <div className="grid gap-12 md:gap-15">
           {/* Paragraph 1 */}
           <div className="grid gap-2.5">
             <h1 className="uppercase font-bold text-4xl md:text-6xl">
@@ -87,7 +87,7 @@ export default function SectionContact1() {
             </div>
             <div className="">
               <Button
-                variant={ButtonVariants.SkyBlueFilledRounded}
+                variant={ButtonVariants.SkyBlueWhiteFilledRounded}
                 className="w-full"
               >
                 Submit
