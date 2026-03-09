@@ -12,6 +12,7 @@ export enum ButtonVariants {
   CreamFilledRounded = "cream-filled-rounded",
   Default = "default",
   GreenFilledRounded = "green-filled-rounded",
+  NavyBlueWhiteFilledRounded = "navy-blue-white-filled-rounded",
   YellowFilledRounded = "yellow-filled-rounded",
   YellowNoBgFilledRounded = "yellow-no-bg-filled-rounded",
   SkyBlueFilledRounded = "sky-blue-filled-rounded",

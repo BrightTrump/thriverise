@@ -87,7 +87,7 @@ export default function SectionContact1() {
             </div>
             <div className="">
               <Button
-                variant={ButtonVariants.SkyBlueWhiteFilledRounded}
+                variant={ButtonVariants.NavyBlueWhiteFilledRounded}
                 className="w-full"
               >
                 Submit
