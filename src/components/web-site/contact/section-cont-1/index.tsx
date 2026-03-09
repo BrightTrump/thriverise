@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { SOCIALS_SCHEMA } from "@/constants/footer.constant";
-import { Icon, Input } from "@/ui";
+import { Button, ButtonVariants, Icon, Input } from "@/ui";
 import { Inputs } from "@/ui/inputs/_types";
 
 export default function SectionContact1() {
@@ -14,9 +13,9 @@ export default function SectionContact1() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
-        className="container mx-auto grid lg:grid-cols-2 gap-12 text-[#183668] order-2 lg:order-none pl-5 md:pl-0"
+        className="container mx-auto grid lg:grid-cols-2 gap-12 text-[#183668] order-2 lg:order-0 pl-5 md:pl-0"
       >
-        <div className="grid gap-12 md:gap-[60px]">
+        <div className="grid gap-12 md:gap-15">
           {/* Paragraph 1 */}
           <div className="grid gap-2.5">
             <h1 className="uppercase font-bold text-4xl md:text-6xl">
@@ -70,8 +69,8 @@ export default function SectionContact1() {
         </div>
 
         {/* Message Information */}
-        <div className="bg-[#01AED9] rounded-xl [&_h2]:text-4xl [&_h2]:font-bold [&_h2]:md:text-[40px] px-5 py-8">
-          <div className="grid gap-5">
+        <div className="bg-[#01AED9] rounded-xl [&_h2]:text-4xl [&_h2]:font-bold [&_h2]:md:text-5xl px-5 py-8">
+          <div className="grid gap-2.5 md:gap-5 pb-5 md:pb-10">
             <h2>Send Us a Message</h2>
             <p>
               Have a message or request? Fill out our quick contact form and
@@ -79,12 +78,21 @@ export default function SectionContact1() {
             </p>
           </div>
 
-          <div>
-            <Input
-              type={Inputs.Text}
-              name=""
-              placeholder="Enter custom terminology"
-            />
+          <div className="grid gap-7">
+            <div className="grid gap-2.5">
+              <Input type={Inputs.Text} label="Name" name="" />
+              <Input type={Inputs.Email} label="Email" name="" />
+              <Input type={Inputs.Text} label="Subject" name="" />
+              <Input type={Inputs.Textarea} label="Message" name="" />
+            </div>
+            <div className="">
+              <Button
+                variant={ButtonVariants.NavyBlueWhiteFilledRounded}
+                className="w-full"
+              >
+                Submit
+              </Button>
+            </div>
           </div>
         </div>
       </motion.div>
