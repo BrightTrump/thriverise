@@ -34,7 +34,12 @@ export default function SectionContact1() {
           <div className="grid gap-7 [&_h2]:font-bold [&_h2]:text-[26px] [&_p]:text-lg [&_p]:md:text-lg">
             <div>
               <h2>Email:</h2>
-              <p>thriveriseafrica@gmail.com</p>
+              <a
+                href="mailto:thriveriseafrica@gmail.com"
+                className="hover:font-bold"
+              >
+                thriveriseafrica@gmail.com{" "}
+              </a>
             </div>
             <div>
               <h2>Phone/WhatsApp:</h2>
@@ -45,9 +50,12 @@ export default function SectionContact1() {
               <p>
                 For press, partnerships, or speaking engagements, please email:{" "}
                 <br />
-                <span className="font-bold italic">
-                  thriveriseafrica@gmail.com
-                </span>{" "}
+                <a
+                  className="font-bold italic hover:font-normal"
+                  href="mailto:thriveriseafrica@gmail.com"
+                >
+                  thriveriseafrica@gmail.com{" "}
+                </a>{" "}
                 <br /> Subject Line: Media/Partnership Inquiry
               </p>
             </div>

@@ -21,7 +21,7 @@ export default function SectionContact2() {
               Yes! Reach out via email{" "}
               <a
                 href="mailto:thriveriseafrica@gmail.com"
-                className="underline hover:text-white"
+                className="underline hover:font-bold"
               >
                 thriveriseafrica@gmail.com{" "}
               </a>
