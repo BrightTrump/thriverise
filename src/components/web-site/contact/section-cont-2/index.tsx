@@ -18,8 +18,14 @@ export default function SectionContact2() {
               Can I donate books or learning materials?
             </AccordionTrigger>
             <AccordionContent>
-              Yes! Reach out via email or DM, and we&apos;ll guide you on what’s
-              most needed.
+              Yes! Reach out via email{" "}
+              <a
+                href="mailto:thriveriseafrica@gmail.com"
+                className="underline hover:text-white"
+              >
+                thriveriseafrica@gmail.com{" "}
+              </a>
+              or DM, and we&apos;ll guide you on what&apos;s most needed.
             </AccordionContent>
           </AccordionItem>
 
