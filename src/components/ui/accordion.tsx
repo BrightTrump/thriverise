@@ -13,10 +13,7 @@ function Accordion({
   return (
     <AccordionPrimitive.Root
       data-slot="accordion"
-      className={cn(
-        "flex w-full flex-col justify-b text-[#183668] bg-white rounded-xl border-2 border-[#01AED9]",
-        className,
-      )}
+      className={cn("flex w-full flex-col", className)}
       {...props}
     />
   );
@@ -29,7 +26,10 @@ function AccordionItem({
   return (
     <AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn("not-last:border-b", className)}
+      className={cn(
+        "not-last:border-b text-[#183668] rounded-xl border-2 border-[#01AED9] bg-white",
+        className,
+      )}
       {...props}
     />
   );
@@ -45,7 +45,7 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "group/accordion-trigger relative flex flex-1 items-start justify-between rounded-lg  py-2.5 text-left text-[22px] font-bold transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground border-2 border-[#01AED9] px-2",
+          "group/accordion-trigger relative flex flex-1 items-center justify-between rounded-lg  py-2.5 text-left text-[22px] font-bold transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground border-2 border-[#01AED9] px-2",
           className,
         )}
         {...props}
