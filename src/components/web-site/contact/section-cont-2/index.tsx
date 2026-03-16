@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 export default function SectionContact2() {
   return (
@@ -28,7 +29,23 @@ export default function SectionContact2() {
             <AccordionContent>
               You can volunteer virtually or in person (currently in Kwara
               State)or <br /> Visit our{" "}
-              <link href={"/get-involved"}>Get Involved</link> page to sign up.
+              <Link href={"/get-involved"}>Get Involved</Link> page to sign up.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+        <Accordion type="single" defaultValue="item-1" collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger>
+              How do I become a Campus Ambassador?
+            </AccordionTrigger>
+            <AccordionContent>
+              Visit the ThriveRise{" "}
+              <Link href={"/campus-ambassador"}>Campus Ambassador </Link>
+              page or click here{" "}
+              <Link href={"/campus-ambassador#ambassador"}>
+                Become an Ambassador
+              </Link>{" "}
+              to apply.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
