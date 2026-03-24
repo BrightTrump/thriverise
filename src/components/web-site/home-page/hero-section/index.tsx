@@ -24,7 +24,7 @@ export default function HeroSection() {
             </span>{" "}
             at a Time
           </h1>
-          <p className="max-w-xl">
+          <p>
             Empowering out-of-school children, underserved youth, and students
             across Africa with free education, skills, and lifelong
             opportunities.
