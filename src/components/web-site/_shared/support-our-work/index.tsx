@@ -5,11 +5,11 @@ export default function SupportOurWork() {
   return (
     <section className="py-10 sm:py-20 layout-spacing grid gap-24 items-center">
       <div className="relative container mx-auto max-w-6xl px-3 sm:px-6 md:px-12 grid gap-8 rounded-4xl py-16 overflow-hidden">
-        {/* Background image */}
-        <div className="absolute inset-0 bg-[url('/website-ui/pattern.svg')] bg-cover bg-center"></div>
+        {/* Background pattern */}
+        <div className="absolute inset-0 bg-[url('/website-ui/pattern.svg')] bg-repeat bg-size-[400px] opacity-40"></div>
 
-        {/* Color overlay */}
-        <div className="absolute inset-0 bg-[#183668]/90"></div>
+        {/* Color overlay (lighter so pattern shows) */}
+        <div className="absolute inset-0 bg-[#183668]/80"></div>
 
         {/* Content */}
         <div className="relative z-10 grid gap-8">
