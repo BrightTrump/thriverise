@@ -15,12 +15,13 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "ThriveRise Foundation | Empowering Youth Through Education",
-    template: "%s | ThriveRise Foundation",
+    default: "ThriveRise Foundation for Educational Development | Empowering Youth Through Education",
+    template: "%s | ThriveRise Foundation for Educational Development",
   },
   description:
     "ThriveRise Foundation for Educational Development is a youth-led nonprofit empowering out-of-school children, underserved youth, and students across Africa with free education, skills, and lifelong opportunities.",
   keywords: [
+    "ThriveRise Foundation for Educational Development",
     "ThriveRise Foundation",
     "education nonprofit Africa",
     "youth empowerment Nigeria",
@@ -32,8 +33,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://thriverisefoundation.org"),
   openGraph: {
     type: "website",
-    siteName: "ThriveRise Foundation",
-    title: "ThriveRise Foundation | Empowering Youth Through Education",
+    siteName: "ThriveRise Foundation for Educational Development",
+    title: "ThriveRise Foundation for Educational Development | Empowering Youth Through Education",
     description:
       "A youth-led nonprofit empowering out-of-school children, underserved youth, and students across Africa with free education, skills, and lifelong opportunities.",
     url: "https://thriverisefoundation.org",
@@ -42,14 +43,14 @@ export const metadata: Metadata = {
         url: "/website-ui/hero-image.png",
         width: 1200,
         height: 630,
-        alt: "ThriveRise Foundation",
+        alt: "ThriveRise Foundation for Educational Development",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@thriverise_",
-    title: "ThriveRise Foundation | Empowering Youth Through Education",
+    title: "ThriveRise Foundation for Educational Development | Empowering Youth Through Education",
     description:
       "A youth-led nonprofit empowering out-of-school children, underserved youth, and students across Africa with free education, skills, and lifelong opportunities.",
     images: ["/website-ui/hero-image.png"],
@@ -69,6 +70,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("scroll-smooth", "font-sans", geist.variable)}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "NonprofitOrganization",
+              "name": "ThriveRise Foundation for Educational Development",
+              "alternateName": "ThriveRise Foundation",
+              "url": "https://www.thriverisefoundation.org",
+              "logo": "https://www.thriverisefoundation.org/website-ui/thriverise-logo.svg",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Tanke, Ilorin",
+                "addressRegion": "Kwara State",
+                "addressCountry": "NG"
+              },
+              "sameAs": [
+                "https://www.instagram.com/thriverise_foundation",
+                "https://www.twitter.com/thriverise_",
+                "https://www.facebook.com/ThriveRiseFoundation",
+                "https://www.linkedin.com/company/thriverise"
+              ]
+            }),
+          }}
+        />
+      </head>
       <body className={poppins.className} suppressHydrationWarning={true}>
         <NextTopLoader
           color="#c1c1c1"

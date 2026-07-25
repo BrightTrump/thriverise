@@ -43,7 +43,7 @@ export default function Footer() {
 
           <nav className="grid sm:grid-flow-col items-start [&>div]:grid [&>div]:gap-5 [&_h3]:text-lg [&_h3]:uppercase [&_h3]:font-bold gap-10">
             <div>
-              <h3>About Thriverise</h3>
+              <h3>About ThriveRise Foundation for Educational Development</h3>
               <Link href={"/about-us"}>About Us</Link>
               <Link href={"#our-work"}>Our Work</Link>
               <Link href={"resources"}>Our Impact</Link>
@@ -75,6 +75,9 @@ export default function Footer() {
             </p>
             <p className="opacity-70">
               Tanke, Ilorin, Kwara State, Nigeria
+            </p>
+            <p className="text-xs opacity-50 mt-1">
+              thriverisefoundation.org is the official website owned and operated by ThriveRise Foundation for Educational Development.
             </p>
           </div>
           <div className="grid grid-flow-col gap-2 justify-between order-1 sm:order-none">

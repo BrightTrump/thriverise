@@ -23,6 +23,9 @@ export default function SectionAbout1() {
             to learning, growth, and work for underserved children, youth, and
             students across Nigeria and Africa.
           </p>
+          <p className="text-sm opacity-60 lg:max-w-4xl">
+            ThriveRise Foundation for Educational Development is the registered nonprofit organization operating thriverisefoundation.org.
+          </p>
         </div>
 
         {/* Images Section */}
