@@ -83,8 +83,9 @@ export default function RootLayout({
               "logo": "https://www.thriverisefoundation.org/website-ui/thriverise-logo.svg",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Tanke, Ilorin",
-                "addressRegion": "Kwara State",
+                "streetAddress": "No. 2, Adeyinka Odukoya Street, Amikanle, Alagbado",
+                "addressLocality": "Lagos",
+                "addressRegion": "Lagos State",
                 "addressCountry": "NG"
               },
               "sameAs": [

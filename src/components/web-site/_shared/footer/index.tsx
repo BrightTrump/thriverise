@@ -74,7 +74,10 @@ export default function Footer() {
               © 2026 ThriveRise Foundation for Educational Development. All Rights Reserved.
             </p>
             <p className="opacity-70">
-              Tanke, Ilorin, Kwara State, Nigeria
+              No. 2, Adeyinka Odukoya Street, Amikanle, Alagbado, Lagos State, Nigeria
+            </p>
+            <p className="opacity-70 text-sm">
+              CAC Registration No: 9442836
             </p>
             <p className="text-xs opacity-50 mt-1">
               thriverisefoundation.org is the official website owned and operated by ThriveRise Foundation for Educational Development.

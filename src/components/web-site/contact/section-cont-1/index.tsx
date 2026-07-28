@@ -47,7 +47,11 @@ export default function SectionContact1() {
             </div>
             <div>
               <h2>Address:</h2>
-              <p>Tanke, Ilorin, Kwara State, Nigeria</p>
+              <p>No. 2, Adeyinka Odukoya Street,<br />Amikanle, Alagbado, Lagos State, Nigeria</p>
+            </div>
+            <div>
+              <h2>CAC Registration:</h2>
+              <p>9442836</p>
             </div>
             <div>
               <h2>Media & Partnership Inquiries</h2>
