@@ -67,25 +67,50 @@ export default function Footer() {
           </nav>
         </div>
 
-        {/* Copy Right and Links */}
-        <div className="w-full grid sm:grid-flow-col justify-between gap-7">
-          <div className="grid order-2 sm:order-none">
-            <p className="opacity-70">
-              © 2026 ThriveRise Foundation for Educational Development. All Rights Reserved.
-            </p>
-            <p className="opacity-70">
-              No. 2, Adeyinka Odukoya Street, Amikanle, Alagbado, Lagos State, Nigeria
-            </p>
-            <p className="opacity-70 text-sm">
-              CAC Registration No: 9442836
-            </p>
-            <p className="text-xs opacity-50 mt-1">
-              thriverisefoundation.org is the official website owned and operated by ThriveRise Foundation for Educational Development.
-            </p>
+        {/* Contact Info + Copyright */}
+        <div className="w-full grid gap-6">
+          {/* Contact details row */}
+          <div className="grid sm:grid-flow-col sm:justify-start gap-5 sm:gap-10 text-sm opacity-80">
+            {/* Address */}
+            <div className="flex items-start gap-2.5">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 10c0 6-8 13-8 13S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>No. 2, Adeyinka Odukoya Street,<br />Amikanle, Alagbado, Lagos State, Nigeria</span>
+            </div>
+            {/* Phone */}
+            <div className="flex items-center gap-2.5">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.88a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/>
+              </svg>
+              <a href="tel:+2347025201857" className="hover:opacity-100">+234 702520 1857</a>
+            </div>
+            {/* Email */}
+            <div className="flex items-center gap-2.5">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <a href="mailto:thriveriseafrica@gmail.com" className="hover:opacity-100">thriveriseafrica@gmail.com</a>
+            </div>
           </div>
-          <div className="grid grid-flow-col gap-2 justify-between order-1 sm:order-none">
-            <Link href={"/privacy-policy"}>Privacy Policy</Link>
-            <Link href={"/terms-of-use"}>Terms of Use</Link>
+
+          {/* Copyright, CAC, Legal */}
+          <div className="w-full grid sm:grid-flow-col justify-between gap-4">
+            <div className="grid gap-1 order-2 sm:order-none">
+              <p className="opacity-70 text-sm">
+                © 2026 ThriveRise Foundation for Educational Development. All Rights Reserved.
+              </p>
+              <p className="opacity-70 text-sm font-medium">
+                CAC Registration No: 9442836
+              </p>
+              <p className="text-xs opacity-50">
+                thriverisefoundation.org is the official website owned and operated by ThriveRise Foundation for Educational Development.
+              </p>
+            </div>
+            <div className="grid grid-flow-col gap-4 justify-start sm:justify-end items-start order-1 sm:order-none text-sm">
+              <Link href={"/privacy-policy"}>Privacy Policy</Link>
+              <Link href={"/terms-of-use"}>Terms of Use</Link>
+            </div>
           </div>
         </div>
       </div>
