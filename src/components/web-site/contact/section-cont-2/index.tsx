@@ -20,10 +20,10 @@ export default function SectionContact2() {
             <AccordionContent>
               Yes! Reach out via email{" "}
               <a
-                href="mailto:thriveriseafrica@gmail.com"
+                href="mailto:hello@thriverisefoundation.org"
                 className="underline hover:font-bold"
               >
-                thriveriseafrica@gmail.com{" "}
+                hello@thriverisefoundation.org{" "}
               </a>
               or DM, and we&apos;ll guide you on what&apos;s most needed.
             </AccordionContent>

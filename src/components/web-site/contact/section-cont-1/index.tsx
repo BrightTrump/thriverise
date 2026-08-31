@@ -35,10 +35,10 @@ export default function SectionContact1() {
             <div>
               <h2>Email:</h2>
               <a
-                href="mailto:thriveriseafrica@gmail.com"
+                href="mailto:hello@thriverisefoundation.org"
                 className="hover:font-bold"
               >
-                thriveriseafrica@gmail.com{" "}
+                hello@thriverisefoundation.org{" "}
               </a>
             </div>
             <div>
@@ -60,9 +60,9 @@ export default function SectionContact1() {
                 <br />
                 <a
                   className="font-bold italic hover:font-normal"
-                  href="mailto:thriveriseafrica@gmail.com"
+                  href="mailto:hello@thriverisefoundation.org"
                 >
-                  thriveriseafrica@gmail.com{" "}
+                  hello@thriverisefoundation.org{" "}
                 </a>{" "}
                 <br /> Subject Line: Media/Partnership Inquiry
               </p>

@@ -58,7 +58,7 @@ export default function PrivacyPolicy() {
               </p>
             </div>
             <p>
-              For privacy-related requests, email: thriveriseafrica@gmail.com
+              For privacy-related requests, email: hello@thriverisefoundation.org
             </p>
           </div>
         </div>
